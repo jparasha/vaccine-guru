@@ -9,10 +9,11 @@
 
 .center {
     display: flex;
+    overflow: hidden;
     padding: 2% 5% 2% 2%;
     min-height: 200px;
-    width: 180px;
-    justify-content: center;
+    width: 300px;
+    justify-content: space-around;
     flex-direction: column;
     margin: auto auto 5% auto;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .25);
@@ -46,15 +47,20 @@
 }
 
 .card__age-limit {
-    top: 0;
+    bottom: 0;
     right: 0;
     text-align: right;
     padding: 2% 5% 2% 5%;
     position: absolute;
     font-size: 0.7rem;
     color: #fff;
-    background: #09b109c7;
-    border-start-end-radius: 12px;
+    background: #085078;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #85D8CE, #085078);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #85D8CE, #085078);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-end-end-radius: 12px;
 }
 
 
