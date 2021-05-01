@@ -1,0 +1,11 @@
+.tile {
+    padding: 0.4rem;
+    font-size: 0.7rem;
+    display: flex;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    margin: 5%;
+    justify-content: center;
+    background-color: #09b109c7;
+    color: #fff;
+}

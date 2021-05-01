@@ -1,0 +1,6 @@
+{
+    "input_placeholder": "Enter PinCode",
+    "search_button_text": "Search",
+    "ERROR_MSG": "oops, Something is not right!",
+    "RESULTS_FOUND": "result(s) found"
+}

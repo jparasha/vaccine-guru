@@ -1,23 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import CONSTANTS from './constants.json';
+import axios from './interceptor';
+import { getFormattedDate } from './utils';
+import SearchComponent from './Components/SearchComponent';
+import ResultComponent from './Components/ResultComponent';
+
 
 function App() {
+
+  const [hospitals, setHospitals] = useState(null);
+  const [errors, setErrors] = useState(false);
+
+
+  const searchHandler = pin => {
+    console.log(pin, getFormattedDate());
+    axios.get(`calendarByPin?pincode=${pin}&date=${getFormattedDate()}`)
+      .then(({ data = {} }) => setHospitals(data))
+      .catch(() => setErrors(true));
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SearchComponent
+        data={CONSTANTS}
+        searchHandler={searchHandler}
+      />
+      {<ResultComponent
+        response={hospitals}
+        data={CONSTANTS}
+        errors={errors}
+      />}
     </div>
   );
 }
