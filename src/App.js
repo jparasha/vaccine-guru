@@ -10,13 +10,17 @@ import ResultComponent from './Components/ResultComponent';
 function App() {
 
   const [hospitals, setHospitals] = useState(null);
-  const [errors, setErrors] = useState(false);
+  const [errors, setErrors] = useState(null);
 
 
   const searchHandler = pin => {
     console.log(pin, getFormattedDate());
-    axios.get(`calendarByPin?pincode=${pin}&date=${getFormattedDate()}`)
-      .then(({ data = {} }) => setHospitals(data))
+    const isProduction = (process.env.NODE_ENV === 'production');
+    axios.get(isProduction ? `calendarByPin?pincode=${pin}&date=${getFormattedDate()}` : '')
+      .then(({ data = {} }) => {
+        setHospitals(data);
+        setErrors(false);
+      })
       .catch(() => setErrors(true));
   };
 

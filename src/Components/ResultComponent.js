@@ -2,15 +2,18 @@ import './results.css';
 import { Fragment } from 'react';
 import Tile from './Tile';
 
-const ResultComponent = ({ response = {}, errors = false, data: CONSTANTS = {} }) => {
+const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {} }) => {
     const { centers = [] } = response || {};
 
     console.log(centers);
 
     return (
         <Fragment>
-            {(centers && !errors) && <h2 className='container result-count'>{`${centers.length} ${CONSTANTS.RESULTS_FOUND}`}</h2>}
+            {/* {(centers && !errors) && <h2 className='container result-count'>{`${centers.length} ${CONSTANTS.RESULTS_FOUND}`}</h2>} */}
             <div className='centers'>
+                {
+                    (errors !== null) && <h2 className='container result-count'>{`${centers.length} ${CONSTANTS.RESULTS_FOUND}`}</h2>
+                }
                 {
                     (errors) ?
                         <div className='center' >
@@ -23,15 +26,15 @@ const ResultComponent = ({ response = {}, errors = false, data: CONSTANTS = {} }
                                 let _available_capacity = '', _min_age_limit = '', _vaccine = '';
                                 return (
                                     <div className='center' key={index}>
-
+                                        <div className='center__title'>
+                                            <h6 className='no-margin center__title-secondary'>{`${district_name}, ${state_name}`}</h6>
+                                            <h5 className='no-margin center__title-primary'><strong>{name}</strong></h5>
+                                        </div>
                                         <div className='center__tiles'>
                                             <Tile data={fee_type} />
-                                            <Tile data={`${from}-${to}`} />
+                                            <Tile data={`${from.substr(0, 5)} - ${to.substr(0, 5)}`} />
                                         </div>
-                                        <div className='center__title'>
-                                            <h5 className='no-margin center__title-primary'><strong>{name}</strong></h5>
-                                            <h6 className='no-margin center__title-secondary'>{`${district_name}, ${state_name}`}</h6>
-                                        </div>
+
                                         {
                                             sessions.forEach((session = {}) => {
                                                 const { available_capacity = '', min_age_limit = '', vaccine = '', date = '' } = session;
@@ -42,8 +45,8 @@ const ResultComponent = ({ response = {}, errors = false, data: CONSTANTS = {} }
                                         }
                                         <div className='card__age-limit'>
                                             <div>{`${_min_age_limit}+ age`}</div>
-                                            <div>{`${_available_capacity.toFixed() || 'not'} available`}</div>
                                             <div>{`${_vaccine || 'coviShield'}`}</div>
+                                            <div>{`${_available_capacity.toFixed() || 'not'} available`}</div>
                                         </div>
                                     </div>
                                 );
