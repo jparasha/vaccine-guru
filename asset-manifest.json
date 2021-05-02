@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/vaccine-guru/static/css/main.32540f38.chunk.css",
-    "main.js": "/vaccine-guru/static/js/main.b6f79168.chunk.js",
-    "main.js.map": "/vaccine-guru/static/js/main.b6f79168.chunk.js.map",
+    "main.css": "/vaccine-guru/static/css/main.fd8e59fe.chunk.css",
+    "main.js": "/vaccine-guru/static/js/main.fbf00a5e.chunk.js",
+    "main.js.map": "/vaccine-guru/static/js/main.fbf00a5e.chunk.js.map",
     "runtime-main.js": "/vaccine-guru/static/js/runtime-main.dcfe4b72.js",
     "runtime-main.js.map": "/vaccine-guru/static/js/runtime-main.dcfe4b72.js.map",
     "static/js/2.45f3d18c.chunk.js": "/vaccine-guru/static/js/2.45f3d18c.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.6740a769.chunk.js": "/vaccine-guru/static/js/3.6740a769.chunk.js",
     "static/js/3.6740a769.chunk.js.map": "/vaccine-guru/static/js/3.6740a769.chunk.js.map",
     "index.html": "/vaccine-guru/index.html",
-    "static/css/main.32540f38.chunk.css.map": "/vaccine-guru/static/css/main.32540f38.chunk.css.map",
+    "static/css/main.fd8e59fe.chunk.css.map": "/vaccine-guru/static/css/main.fd8e59fe.chunk.css.map",
     "static/js/2.45f3d18c.chunk.js.LICENSE.txt": "/vaccine-guru/static/js/2.45f3d18c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.dcfe4b72.js",
     "static/js/2.45f3d18c.chunk.js",
-    "static/css/main.32540f38.chunk.css",
-    "static/js/main.b6f79168.chunk.js"
+    "static/css/main.fd8e59fe.chunk.css",
+    "static/js/main.fbf00a5e.chunk.js"
   ]
 }
