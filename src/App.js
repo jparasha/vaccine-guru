@@ -21,7 +21,7 @@ function App() {
         .then(response => response.json())
         .then(res => {
           console.log(res.ip, 'ip');
-          axios.get(`http://ip-api.com/json/${res.ip}`)
+          axios.get(`//ip-api.com/json/${res.ip}`)
             .then(data => {
               console.log(data.data);
               const { data: { zip = '' } = {} } = data || {};
