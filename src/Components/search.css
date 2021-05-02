@@ -1,72 +1,76 @@
+.search-component {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
 .search {
     padding: 5%;
     display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
+    flex-flow: row wrap;
+    max-width: 500px;
     overflow-x: hidden;
-    justify-content: space-around;
-    font-family: 'Roboto', sans-serif;
+    justify-content: flex-start;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.search__row {
-    display: flex;
-    justify-content: space-around;
-    max-width: 100%;
+.search .flex-item:nth-child(1) {
+    width: 100%;
 }
 
 .search__input {
+    flex: 1;
     height: 30px;
-    min-width: 50vw;
-    border: none;
+    max-width: 200px;
+    text-align: center;
+    margin-right: 1%;
     box-shadow: none;
-    border-radius: 2px;
+    border-radius: 12px;
     padding: 1rem 3rem;
     background-color: #fff;
     color: #4e4c4a;
     border: 1px solid #4e4c4a;
-    border-radius: 4px;
     font-size: 20px;
-    letter-spacing: 0.5rem;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
     font-family: 'Open Sans', sans-serif;
 }
 
 .search__input:focus {
     background: #fff;
-    box-shadow: 0 0 5px  #09b109c7;
-    border: 1px solid  #09b109c7;
+    box-shadow: 0 0 5px#085078;
+    border: 1px solid#085078;
     outline: 0;
 }
 
 .search__button {
     padding: 1rem 3rem;
-    position: relative;
-    display: inline-block;
     text-align: center;
-    border: 0;
-    border-radius: 4px;
-    background: #09b109c7;
+    border-radius: 12px;
     color: #fff;
-    letter-spacing: 0.2rem;
-    line-height: 1.5;
-    min-height: 1em;
+    letter-spacing: 0.1rem;
+    min-height: 65px;
     cursor: pointer;
     text-decoration: none;
     appearance: none;
-    overflow: visible;
     font-size: 20px;
     font-weight: bold;
-    border: 1px solid #09b109c7;
+    border: 1px solid #085078;
+    background: #085078;
+    font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (max-width: 768px) {
-    .search__row {
-        margin: 0 auto;
-        margin-top: 50px;
-    }
 
     .search__input {
-        width: 100vw;
-        letter-spacing: 0.5rem;
-        ;
+        margin-bottom: 5%;
+        margin-right: auto;
+        max-width: 100%;
+    }
+
+    .search__button {
+        flex: 1;
     }
 }

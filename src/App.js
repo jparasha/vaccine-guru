@@ -6,11 +6,13 @@ import { getFormattedDate } from './utils';
 import SearchComponent from './Components/SearchComponent';
 import ResultComponent from './Components/ResultComponent';
 
-
 function App() {
 
   const [hospitals, setHospitals] = useState(null);
   const [errors, setErrors] = useState(null);
+  let resultRef = null;
+
+  const setResultRef = ref => (resultRef = (resultRef || ref));
 
 
   const searchHandler = pin => {
@@ -20,6 +22,12 @@ function App() {
       .then(({ data = {} }) => {
         setHospitals(data);
         setErrors(false);
+        if (resultRef) {
+          setTimeout(() => {
+            resultRef.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+          });
+        }
+
       })
       .catch(() => setErrors(true));
   };
@@ -34,6 +42,7 @@ function App() {
         response={hospitals}
         data={CONSTANTS}
         errors={errors}
+        setRef={setResultRef}
       />}
     </div>
   );

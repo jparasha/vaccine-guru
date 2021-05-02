@@ -1,16 +1,14 @@
 import './results.css';
-import { Fragment } from 'react';
+import { Fragment, useEffect } from 'react';
 import Tile from './Tile';
 
-const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {} }) => {
+const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {}, setRef }) => {
     const { centers = [] } = response || {};
 
     console.log(centers);
-
     return (
         <Fragment>
-            {/* {(centers && !errors) && <h2 className='container result-count'>{`${centers.length} ${CONSTANTS.RESULTS_FOUND}`}</h2>} */}
-            <div className='centers'>
+            <div className='centers' id='resultCenters' ref={ref => setRef(ref)}>
                 {
                     (errors !== null) && <h2 className='container result-count'>{`${centers.length} ${CONSTANTS.RESULTS_FOUND}`}</h2>
                 }
@@ -30,11 +28,6 @@ const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {} })
                                             <h6 className='no-margin center__title-secondary'>{`${district_name}, ${state_name}`}</h6>
                                             <h5 className='no-margin center__title-primary'><strong>{name}</strong></h5>
                                         </div>
-                                        <div className='center__tiles'>
-                                            <Tile data={fee_type} />
-                                            <Tile data={`${from.substr(0, 5)} - ${to.substr(0, 5)}`} />
-                                        </div>
-
                                         {
                                             sessions.forEach((session = {}) => {
                                                 const { available_capacity = '', min_age_limit = '', vaccine = '', date = '' } = session;
@@ -43,20 +36,22 @@ const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {} })
                                                 _vaccine = _vaccine || vaccine;
                                             })
                                         }
+                                        <div className='center__tiles'>
+                                            <Tile data={`${_min_age_limit} + `} />
+                                            <Tile data={`${_vaccine || ''}`} />
+                                            <Tile data={`${_available_capacity.toFixed() || 'not'} available`} />
+                                        </div>
                                         <div className='card__age-limit'>
-                                            <div>{`${_min_age_limit}+ age`}</div>
-                                            <div>{`${_vaccine || 'coviShield'}`}</div>
-                                            <div>{`${_available_capacity.toFixed() || 'not'} available`}</div>
+                                            <div>{`${fee_type}`}</div>
+                                            <div>{`${from.substr(0, 5)} - ${to.substr(0, 5)}`}</div>
                                         </div>
                                     </div>
                                 );
                             })
                 }
-
             </div>
         </Fragment>
     );
-
 };
 
 export default ResultComponent;

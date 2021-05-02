@@ -2,5 +2,6 @@
     "input_placeholder": "Enter PinCode",
     "search_button_text": "Search",
     "ERROR_MSG": "oops, Something is not right!",
-    "RESULTS_FOUND": "result(s) found"
+    "RESULTS_FOUND": "result(s) found",
+    "INPUT_LABEL": "Please enter 6 digit pin code"
 }

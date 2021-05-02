@@ -7,10 +7,14 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.App {
+  margin-top: 50px;
+}
+
 .container {
   max-width: 1240px;
   width: 1240px;
-  margin: 5% auto;
+  margin: 5% 5%;
   margin-bottom: 50px;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .25);
   position: relative;
@@ -23,17 +27,13 @@ body {
   margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
 @media screen and (max-width: 768px) {
   .container {
-    max-width: 100vw;
+    width: 100%;
+  }
+
+  .App {
+    margin-top: 10px;
+    overflow-x: hidden;
   }
 }

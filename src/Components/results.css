@@ -25,6 +25,9 @@
 
 .result-count {
     box-shadow: none;
+    margin: auto;
+    margin-bottom: 3%;
+    font-weight: normal;
 }
 
 .center__title-primary {
@@ -52,14 +55,9 @@
     text-align: right;
     padding: 2% 5% 2% 5%;
     position: absolute;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: #fff;
     background: #085078;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #85D8CE, #085078);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #85D8CE, #085078);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-start-end-radius: 12px;
 }
 
@@ -79,7 +77,7 @@
 
     .card__age-limit {
         padding: 2% 3% 2% 4%;
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
 
     .result-count {

@@ -8,36 +8,52 @@ const manageEvents = event => {
 
 const SearchComponent = ({ data = {}, searchHandler }) => {
     const [pinCode, setPinCode] = useState('');
+    let _inputRef = null;
+
 
     const onPinChange = (event = {}) => {
         manageEvents(event);
         const { value = '' } = event.target || {};
-        value !== pinCode && setPinCode(value);
+        if (!(/^\d*$/.test(value)) || value.length > 6) {
+            return false;
+        } else {
+            (value !== pinCode) && setPinCode(value);
+            return true;
+        }
     };
 
     const onSearch = event => {
         manageEvents(event);
-        (searchHandler && pinCode.length === 6) && searchHandler(pinCode);
+        if (pinCode.length === 6) {
+            _inputRef && _inputRef.blur();
+            searchHandler && searchHandler(pinCode);
+        } else {
+            _inputRef && _inputRef.focus();
+        }
     };
+    console.log(pinCode);
 
     return (
-        <div className='container'>
+        <div className='search-component'>
             <form className='search'>
-                <div className='search__row'>
-                    <input
-                        required
-                        type='number'
-                        value={pinCode}
-                        onChange={onPinChange}
-                        className='search__input'
-                        placeholder={data.input_placeholder || ''}
-                    />
-                </div>
-                <div className='search__row'>
-                    <button type='submit' className='search__button' onClick={onSearch}>
-                        {data.search_button_text || 'check'}
-                    </button>
-                </div>
+                <h3 className='flex-item'>{data.INPUT_LABEL}</h3>
+                <input
+                    id='mainInput'
+                    ref={ref => _inputRef = ref}
+                    type='text'
+                    inputMode="numeric"
+                    pattern="[0-9]*"
+                    value={pinCode}
+                    onChange={onPinChange}
+                    className='search__input flex-item'
+                    placeholder={data.input_placeholder || ''}
+                />
+
+
+                <button type='submit' className='search__button flex-item' onClick={onSearch}>
+                    {data.search_button_text || 'check'}
+                </button>
+
             </form>
         </div>
     );
