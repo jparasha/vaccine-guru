@@ -12,26 +12,34 @@ export const manageEvents = event => {
     event.stopPropagation();
 };
 
-export const getUserZip = (REACT_APP_IP_URL, REACT_APP_ZIP_URL, isProduction) => {
-    axios.get(REACT_APP_IP_URL)
-        .then(({ data = {} }) => {
-            console.log('ip', data.ip);
-            const ZIP_URL = REACT_APP_ZIP_URL.replace(/{ip}/g, (data.ip || ''));
-            isProduction && axios.get(ZIP_URL)
-                .then(({ data: zipData = {} }) => {
-                    console.log(zipData);
-                    const { postal = '' } = zipData || {};
-                    console.log(postal, 'zip');
-                    return postal;
-                })
-                .catch(err => {
-                    console.log(err);
-                    return null;
-                });
-        })
-        .catch(err => {
-            console.error('Problem fetching my IP', err);
+const getResponse = async URL => {
+    try {
+        return await axios.get(URL);
+    } catch (error) {
+        console.error(error, URL);
+        return null;
+    }
+};
+
+export const getUserZip = async (REACT_APP_IP_URL, REACT_APP_ZIP_URL, isProduction) => {
+    if (!isProduction) {
+        return null;
+    }
+    const userIPResponse = await getResponse(REACT_APP_IP_URL);
+    if (userIPResponse) {
+        const { data: { ip = '' } = {} } = userIPResponse;
+        console.log('ip', ip);
+        const ZIP_URL = REACT_APP_ZIP_URL.replace(/{ip}/g, (ip || ''));
+        const userZIPResponse = await getResponse(ZIP_URL);
+        if (userZIPResponse) {
+            const { data: { postal = '' } = {} } = userIPResponse;
+            return postal;
+        } else {
             return null;
-        });
+        }
+
+    } else {
+        return null;
+    }
 };
 
