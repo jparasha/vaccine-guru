@@ -6,4 +6,4 @@ const interceptor = axios.create({
     baseURL: URL
 });
 
-export default interceptor;
+export default axios;

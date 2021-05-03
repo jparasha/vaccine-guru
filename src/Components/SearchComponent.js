@@ -1,26 +1,9 @@
-import { useState } from 'react';
 import './search.css';
 
-const manageEvents = event => {
-    event.preventDefault();
-    event.stopPropagation();
-};
 
-const SearchComponent = ({ data = {}, searchHandler }) => {
-    const [pinCode, setPinCode] = useState('');
+const SearchComponent = ({ data = {}, searchHandler, pinCode = '', onPinChange, manageEvents }) => {
+
     let _inputRef = null;
-
-
-    const onPinChange = (event = {}) => {
-        manageEvents(event);
-        const { value = '' } = event.target || {};
-        if (!(/^\d*$/.test(value)) || value.length > 6) {
-            return false;
-        } else {
-            (value !== pinCode) && setPinCode(value);
-            return true;
-        }
-    };
 
     const onSearch = event => {
         manageEvents(event);
@@ -31,6 +14,7 @@ const SearchComponent = ({ data = {}, searchHandler }) => {
             _inputRef && _inputRef.focus();
         }
     };
+
     console.log(pinCode);
 
     return (
