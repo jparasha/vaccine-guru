@@ -30,6 +30,14 @@
     font-weight: normal;
 }
 
+.center__title {
+    display: flex;
+    flex-grow: 1;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .center__title-primary {
     font-size: 1.8rem;
     font-weight: bolder;
@@ -43,6 +51,10 @@
 .center__tiles {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-top: auto;
+    justify-content: flex-start;
 }
 
 .center__tiles>.tile {
