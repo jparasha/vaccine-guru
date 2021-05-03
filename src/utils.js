@@ -21,25 +21,28 @@ const getResponse = async URL => {
     }
 };
 
-export const getUserZip = async (REACT_APP_IP_URL, REACT_APP_ZIP_URL, isProduction) => {
-    if (!isProduction) {
-        return null;
-    }
-    const userIPResponse = await getResponse(REACT_APP_IP_URL);
-    if (userIPResponse) {
-        const { data: { ip = '' } = {} } = userIPResponse;
-        console.log('ip', ip);
-        const ZIP_URL = REACT_APP_ZIP_URL.replace(/{ip}/g, (ip || ''));
-        const userZIPResponse = await getResponse(ZIP_URL);
-        if (userZIPResponse) {
-            const { data: { postal = '' } = {} } = userIPResponse;
-            return postal;
+export const getUserZip = (REACT_APP_IP_URL, REACT_APP_ZIP_URL, isProduction) => {
+    return new Promise(async (resolve, reject) => {
+        if (!isProduction) {
+            reject(null);
         } else {
-            return null;
+            const userIPResponse = await getResponse(REACT_APP_IP_URL);
+            if (userIPResponse) {
+                const { data: { ip = '' } = {} } = userIPResponse;
+                console.log('ip', ip);
+                const ZIP_URL = REACT_APP_ZIP_URL.replace(/{ip}/g, (ip || ''));
+                const userZIPResponse = await getResponse(ZIP_URL);
+                if (userZIPResponse) {
+                    const { data: { postal = '' } = {} } = userIPResponse;
+                    console.log('postal', postal);
+                    resolve(postal);
+                } else {
+                    reject(null);
+                }
+            } else {
+                reject(null);
+            }
         }
-
-    } else {
-        return null;
-    }
+    });
 };
 
