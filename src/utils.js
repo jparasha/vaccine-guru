@@ -33,7 +33,7 @@ export const getUserZip = (REACT_APP_IP_URL, REACT_APP_ZIP_URL, isProduction) =>
                 const ZIP_URL = REACT_APP_ZIP_URL.replace(/{ip}/g, (ip || ''));
                 const userZIPResponse = await getResponse(ZIP_URL);
                 if (userZIPResponse) {
-                    const { data: { postal = '' } = {} } = userIPResponse;
+                    const { data: { postal = '' } = {} } = userZIPResponse;
                     console.log('postal', postal);
                     resolve(postal);
                 } else {
