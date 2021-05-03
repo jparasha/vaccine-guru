@@ -36,9 +36,8 @@ const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {}, s
                                         </div>
                                         <div className='center__tiles'>
                                             <Tile data={`${_min_age_limit} + `} />
-                                            <Tile data={`${_vaccine}`} />
-                                            <Tile data={`${from.substr(0, 2)}AM - ${to.substr(0, 2)}PM`} />
-                                            <Tile data={`${_available_capacity ? (_available_capacity.toFixed()) : 'Not'} available`} />
+                                            <Tile data={`${_vaccine || `${from.substr(0, 2)}AM - ${to.substr(0, 2)}PM`}`} />{/* 
+                                            <Tile data={`${_available_capacity ? (_available_capacity.toFixed()) : 'Not'} available`} /> */}
                                         </div>
                                         <div className='card__age-limit'>
                                             <div>{`${fee_type}`}</div>

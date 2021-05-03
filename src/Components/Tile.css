@@ -2,10 +2,12 @@
     padding: 0.4rem 0.9rem;
     font-size: 0.7rem;
     display: flex;
-    border-radius: 5px;
+    border-start-end-radius: 12px;
+    border-end-start-radius: 12px;
     flex-wrap: wrap;
-    margin: 5% 2%;
+    margin: 2%;
     justify-content: center;
     color: #fff;
     background: var(--blue);
+    max-width: 75px;
 }
