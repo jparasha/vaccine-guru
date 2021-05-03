@@ -47,10 +47,8 @@ function App() {
     const getPin = async () => {
       if (!pinCode) {
         await getUserZip(REACT_APP_IP_URL, REACT_APP_ZIP_URL, isProduction)
-          .then(zip => {
-            console.log(zip, 'ziiiiiip', !!(zip && pinCode !== zip));
-            (zip && pinCode !== zip) && setPinCode(zip);
-          });
+          .then(zip => (zip && pinCode !== zip) && setPinCode(zip))
+          .catch(() => {/*  */ });
       }
     };
     getPin();

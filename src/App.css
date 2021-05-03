@@ -1,14 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
 
+:root {
+  --blue: #2867b2;
+  --white: #fff;
+}
+
 body {
   height: 100%;
   background: #fff;
   color: #000;
   font-family: 'Open Sans', sans-serif;
+
 }
 
 .App {
+  display: flex;
   margin-top: 50px;
+  align-items: center;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 
 .container {

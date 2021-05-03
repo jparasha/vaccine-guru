@@ -19,7 +19,8 @@ const SearchComponent = ({ data = {}, searchHandler, pinCode = '', onPinChange, 
 
     return (
         <div className='search-component'>
-            <form className='search'>
+            <img className='search__image' src='/vaccine.jpg' alt='vaccine' />
+            <form className='search__form'>
                 <h3 className='flex-item'>{data.INPUT_LABEL}</h3>
                 <input
                     id='mainInput'
@@ -32,16 +33,12 @@ const SearchComponent = ({ data = {}, searchHandler, pinCode = '', onPinChange, 
                     className='search__input flex-item'
                     placeholder={data.input_placeholder || ''}
                 />
-
-
                 <button type='submit' className='search__button flex-item' onClick={onSearch}>
                     {data.search_button_text || 'check'}
                 </button>
-
             </form>
         </div>
     );
-
 };
 
 export default SearchComponent;

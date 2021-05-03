@@ -1,31 +1,31 @@
 .centers {
-    display: flex;
     margin: 0 3%;
-    flex-direction: row;
-    overflow: hidden;
+    display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
+    flex-direction: row;
     justify-content: flex-start;
 }
 
 .center {
+    z-index: 1;
+    width: 300px;
     display: flex;
     overflow: hidden;
-    padding: 2% 5% 2% 2%;
     min-height: 200px;
-    width: 300px;
-    justify-content: center;
+    position: relative;
+    border-radius: 12px;
+    padding: 2% 5% 2% 2%;
     flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
     margin: auto auto 4% auto;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .25);
-    position: relative;
-    z-index: 1;
-    border-radius: 12px;
-    background-color: #fff;
 }
 
 .result-count {
-    box-shadow: none;
     margin: auto;
+    box-shadow: none;
     margin-bottom: 3%;
     font-weight: normal;
 }
@@ -52,13 +52,14 @@
 .card__age-limit {
     top: 0;
     right: 0;
-    text-align: right;
-    padding: 2% 5% 2% 5%;
-    position: absolute;
-    font-size: 0.8rem;
     color: #fff;
-    background: #085078;
+    text-align: right;
+    font-size: 0.8rem;
+    position: absolute;
+    padding: 2% 5% 2% 5%;
+    background: var(--blue);
     border-start-end-radius: 12px;
+    border-bottom-left-radius: 12px;
 }
 
 
@@ -76,11 +77,20 @@
     }
 
     .card__age-limit {
-        padding: 2% 3% 2% 4%;
         font-size: 0.8rem;
+        padding: 2% 3% 2% 4%;
     }
 
     .result-count {
         margin-left: 5%;
+    }
+
+    .center__title-primary {
+        font-size: 1.6rem;
+        font-weight: bolder;
+    }
+
+    .center__title-secondary {
+        font-size: 1rem;
     }
 }
