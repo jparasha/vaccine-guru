@@ -1,13 +1,14 @@
 import './App.css';
 import axios from './interceptor';
 import CONSTANTS from './constants.json';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import ResultComponent from './Components/ResultComponent';
 import SearchComponent from './Components/SearchComponent';
 import { getFormattedDate, manageEvents, getUserZip } from './utils';
 
 function App() {
 
+  const userPinLoaded = useRef(false);
   const [errors, setErrors] = useState(null);
   const [pinCode, setPinCode] = useState('');
   const [hospitals, setHospitals] = useState(null);
@@ -51,23 +52,25 @@ function App() {
           .catch(() => {/*  */ });
       }
     };
-    getPin();
+    if (!userPinLoaded.current) {
+      getPin();
+      userPinLoaded.current = true;
+    }
   }, [REACT_APP_IP_URL, REACT_APP_ZIP_URL, isProduction, pinCode]);
-
 
   return (
     <div className="App">
       <SearchComponent
         data={CONSTANTS}
-        searchHandler={searchHandler}
         pinCode={pinCode}
         onPinChange={onPinChange}
         manageEvents={manageEvents}
+        searchHandler={searchHandler}
       />
       {<ResultComponent
-        response={hospitals}
-        data={CONSTANTS}
         errors={errors}
+        data={CONSTANTS}
+        response={hospitals}
         setRef={setResultRef}
       />}
     </div>
