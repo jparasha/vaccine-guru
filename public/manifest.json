@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "vaccine-helper",
+  "name": "vaccine-helper",
   "icons": [
     {
       "src": "favicon.ico",
