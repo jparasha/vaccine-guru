@@ -1,8 +1,9 @@
+@import "./switch.css";
+
 .centers {
-    margin: 0 3%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
     flex-direction: row;
     justify-content: flex-start;
 }
@@ -23,11 +24,31 @@
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .25);
 }
 
-.result-count {
-    margin: auto;
+.results-container {
+    width: 100%;
+    position: sticky;
+    background-color: var(--white);
+    z-index: 3;
+    top: 0;
+    margin: 0 3%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.results-container .result-count {
     box-shadow: none;
-    margin-bottom: 3%;
     font-weight: normal;
+}
+
+.results-container .filters {
+    display: flex;
+    min-width: 50%;
+    box-shadow: none;
+    font-weight: normal;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .center__title {
@@ -77,6 +98,7 @@
 
 @media screen and (max-width: 768px) {
     .centers {
+        padding: 0;
         width: 100vw;
         margin: 0 auto;
         margin-bottom: 50%;
@@ -95,10 +117,11 @@
 
     .result-count {
         margin-left: 5%;
+        font-size: 1rem;
     }
 
     .center__title-primary {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         font-weight: bolder;
     }
 
