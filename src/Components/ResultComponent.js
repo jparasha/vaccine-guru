@@ -47,11 +47,12 @@ const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {}, s
                         centerData.map(
                             (center = {}, index = '') => {
                                 const { district_name = '', name = '', state_name = '', fee_type = '', from = '', to = '', sessions = [] } = center;
-                                let _available_capacity = '', _min_age_limit = '', _vaccine = '';
+                                const _available_capacity = { 18: 0, 45: 0 }, _min_age_limit = [], _to = to.substr(0, 2);
+                                let _vaccine = '';
                                 sessions.forEach((session = {}) => {
                                     const { available_capacity = '', min_age_limit = '', vaccine = '', date = '' } = session;
-                                    _available_capacity = _available_capacity || available_capacity;
-                                    _min_age_limit = _min_age_limit || min_age_limit;
+                                    min_age_limit && _min_age_limit.push(min_age_limit);
+                                    _available_capacity[min_age_limit] = _available_capacity[min_age_limit] += available_capacity;
                                     _vaccine = _vaccine || vaccine;
                                 });
                                 return (
@@ -59,12 +60,19 @@ const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {}, s
                                         <div className='center__title'>
                                             <h6 className='no-margin center__title-secondary'>{`${district_name}, ${state_name}`}</h6>
                                             <h5 className='no-margin center__title-primary'><strong>{name}</strong></h5>
-                                            <h6 className='no-margin'><strong>{`${_available_capacity ? (_available_capacity.toFixed()) : 'No'} slots available`}</strong></h6>
+                                            <span>slots this week</span>
+                                            <h6 className='no-margin'>
+                                                <strong>{`45+ : ${_available_capacity[45] ? (_available_capacity[45].toFixed()) : '0'}`}</strong>
+                                            </h6>
+                                            <h6 className='no-margin'>
+                                                <strong>{`18+ : ${_available_capacity[18] ? (_available_capacity[18].toFixed()) : '0'}`}</strong>
+                                            </h6>
                                         </div>
                                         <div className='center__tiles'>
-                                            <Tile data={`${_min_age_limit} + `} />
+                                            <Tile data={`${_min_age_limit.includes(18) ? '18' : '45'} + `} />
                                             <Tile data={`${_vaccine}`} />
-                                            <Tile data={`${`${from.substr(0, 2)}AM - ${to.substr(0, 2)}PM`}`} />                                        </div>
+                                            <Tile data={`${`${from.substr(0, 2)}AM - ${_to > 12 ? (_to - 12) : _to}PM`}`} />
+                                        </div>
                                         <div className='card__age-limit'>
                                             <div>{`${fee_type}`}</div>
                                         </div>

@@ -6,7 +6,7 @@ const Tile = ({ data }) => {
     }
     return (
         <span className='tile'>
-            {data}
+            {`${data.length > 13 ? data.substr(0, 10) + '...' : data}`}
         </span>
     );
 };

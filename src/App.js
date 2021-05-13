@@ -31,7 +31,7 @@ function App() {
 
   const searchHandler = pin => {
     console.log(pin, getFormattedDate());
-    axios.get(isProduction ? `${REACT_APP_BASE_URL}/calendarByPin?pincode=${pin}&date=${getFormattedDate()}` : '/services/110001.json')
+    axios.get(isProduction ? `${REACT_APP_BASE_URL}/calendarByPin?pincode=${pin}&date=${getFormattedDate()}` : '/services/847211.json')
       .then(({ data = {} }) => {
         setHospitals(data);
         setErrors(false);

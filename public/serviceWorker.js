@@ -1,4 +1,4 @@
-const CACHE_NAME = "vaccine-guru-v1";
+const CACHE_NAME = "vaccine-guru-v1.1";
 const urlsToCache = [
     "/",
     "/index.html",

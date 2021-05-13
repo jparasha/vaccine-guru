@@ -1,7 +1,7 @@
 @import "./switch.css";
 
 .centers {
-    width: 100%;
+    margin: 4%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -30,11 +30,12 @@
     background-color: var(--white);
     z-index: 3;
     top: 0;
-    margin: 0 3%;
+    padding: 0 3%;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-around;
+    margin-bottom: 1%;
+    justify-content: space-between;
 }
 
 .results-container .result-count {
@@ -116,16 +117,15 @@
     }
 
     .result-count {
-        margin-left: 5%;
         font-size: 1rem;
     }
 
     .center__title-primary {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         font-weight: bolder;
     }
 
     .center__title-secondary {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
