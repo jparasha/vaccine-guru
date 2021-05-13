@@ -1,12 +1,12 @@
 .tile {
-    padding: 0.4rem 0.9rem;
+    padding: 0.4rem 0.6rem;
     font-size: 0.7rem;
     display: flex;
-    border-start-end-radius: 12px;
-    border-end-start-radius: 12px;
+    border-radius: 12px;
     flex-wrap: wrap;
     margin: 2%;
     justify-content: center;
+    align-items: center;
     color: #fff;
     background: var(--blue);
     max-width: 75px;
