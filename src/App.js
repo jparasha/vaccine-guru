@@ -9,14 +9,19 @@ import { getFormattedDate, manageEvents, getUserZip } from './utils';
 function App() {
 
   const userPinLoaded = useRef(false);
-  const [errors, setErrors] = useState(null);
+  const [state, setState] = useState('');
+  const [allStates, setAllStates] = useState([]);
   const [pinCode, setPinCode] = useState('');
+  const [district, setDistrict] = useState('');
+  const [allDistricts, setAllDistricts] = useState([]);
   const [hospitals, setHospitals] = useState(null);
+  const [searchByPin, setSearchByPin] = useState(true);
+  const [errors, setErrors] = useState(null);
 
   let resultRef = null;
   const setResultRef = ref => (resultRef = (resultRef || ref));
   const isProduction = (process.env.NODE_ENV === 'production');
-  const { REACT_APP_BASE_URL = '', REACT_APP_BASE_URL_DEV = '', REACT_APP_IP_URL = '', REACT_APP_ZIP_URL = '' } = process.env || {};
+  const { REACT_APP_BASE_URL = '', REACT_APP_IP_URL = '', REACT_APP_ZIP_URL = '', REACT_APP_STATES_URL = '', REACT_APP_DISTRICTS_URL = '' } = process.env || {};
 
   const onPinChange = (event = {}) => {
     manageEvents(event);
@@ -29,9 +34,34 @@ function App() {
     }
   };
 
-  const searchHandler = pin => {
-    console.log(pin, getFormattedDate());
-    axios.get(isProduction ? `${REACT_APP_BASE_URL}/calendarByPin?pincode=${pin}&date=${getFormattedDate()}` : '/services/847211.json')
+  const onStateChange = (event = {}) => {
+    manageEvents(event);
+    const { value = '' } = event.target || {};
+    state !== value && setState(value);
+    if (value > 0) {
+      const URL = isProduction ? `${REACT_APP_DISTRICTS_URL}/${value}` : '/services/districts.json';
+      axios.get(URL)
+        .then(({ data = {} }) => {
+          data.districts && setAllDistricts(data.districts);
+        })
+        .catch(err => console.error(err));
+    }
+
+  };
+
+  const onDistrictChange = (event = {}) => {
+    manageEvents(event);
+    const { value = '' } = event.target || {};
+    district !== value && setDistrict(value);
+  };
+
+  const searchHandler = location => {
+    let URL = `${REACT_APP_BASE_URL}/${searchByPin ? 'calendarByPin?pincode' : 'calendarByDistrict?district_id'}=${location}&date=${getFormattedDate()}`;
+    console.log(URL);
+    if (!isProduction) {
+      URL = '/services/847211.json';
+    }
+    axios.get(URL)
       .then(({ data = {} }) => {
         setHospitals(data);
         setErrors(false);
@@ -42,6 +72,11 @@ function App() {
         }
       })
       .catch(() => setErrors(true));
+  };
+
+  const onFormChange = (event = {}) => {
+    manageEvents(event);
+    setSearchByPin(!searchByPin);
   };
 
   useEffect(() => {
@@ -58,14 +93,31 @@ function App() {
     }
   }, [REACT_APP_IP_URL, REACT_APP_ZIP_URL, isProduction, pinCode]);
 
+  useEffect(() => {
+    const URL = isProduction ? REACT_APP_STATES_URL : '/services/states.json';
+    axios.get(URL)
+      .then(({ data = {} }) => {
+        data.states && setAllStates(data.states);
+      })
+      .catch(err => console.error(err));
+  }, [REACT_APP_STATES_URL, isProduction]);
+
   return (
     <div className="App">
       <SearchComponent
+        state={state}
         data={CONSTANTS}
         pinCode={pinCode}
+        district={district}
+        allStates={allStates}
+        searchByPin={searchByPin}
+        allDistricts={allDistricts}
         onPinChange={onPinChange}
+        onFormChange={onFormChange}
         manageEvents={manageEvents}
         searchHandler={searchHandler}
+        onStateChange={onStateChange}
+        onDistrictChange={onDistrictChange}
       />
       {<ResultComponent
         errors={errors}

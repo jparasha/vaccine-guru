@@ -3,5 +3,8 @@
     "search_button_text": "Search",
     "ERROR_MSG": "oops, Something is not right!",
     "RESULTS_FOUND": "result(s) found",
-    "INPUT_LABEL": "Please enter 6 digits pin code"
+    "INPUT_LABEL": "Please enter 6 digits pin code",
+    "DISTRICT_SEARCH_LABEL": "Please select state & district",
+    "SEARCH_BY_DISTRICT": "search by district",
+    "SEARCH_BY_PIN": "search by pincode"
 }
