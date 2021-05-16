@@ -6,5 +6,8 @@
     "INPUT_LABEL": "Please enter 6 digits pin code",
     "DISTRICT_SEARCH_LABEL": "Please select state & district",
     "SEARCH_BY_DISTRICT": "search by district",
-    "SEARCH_BY_PIN": "search by pincode"
+    "SEARCH_BY_PIN": "search by pincode",
+    "FOOTER_PRIMARY_TEXT": "All data sourced from",
+    "FOOTER_PRIMARY_TEXT_ANCHOR": "CoWin",
+    "FOOTER_SECONDARY_TEXT": "Please check official website for booking"
 }

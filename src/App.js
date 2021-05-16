@@ -4,6 +4,7 @@ import CONSTANTS from './constants.json';
 import { useState, useEffect, useRef } from 'react';
 import ResultComponent from './Components/ResultComponent';
 import SearchComponent from './Components/SearchComponent';
+import FooterComponent from './Components/Footer';
 import { getFormattedDate, manageEvents, getUserZip } from './utils';
 
 function App() {
@@ -125,6 +126,7 @@ function App() {
         response={hospitals}
         setRef={setResultRef}
       />}
+      <FooterComponent constants={CONSTANTS} />
     </div>
   );
 }

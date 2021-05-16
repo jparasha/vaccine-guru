@@ -1,333 +1,389 @@
 {
 	"centers": [
 		{
-			"center_id": 698124,
-			"name": "Vice President House",
-			"address": "6 Maulana Azad Road New Delhi Delhi 110001",
-			"state_name": "Delhi",
-			"district_name": "New Delhi",
-			"block_name": "Not Applicable",
-			"pincode": 110001,
-			"lat": 28,
-			"long": 77,
+			"center_id": 526881,
+			"name": "RADHA DEVI G SCHOOL NAWKOTHI",
+			"address": "Naokothi PHC",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Naokothi",
+			"pincode": 851120,
+			"lat": 25,
+			"long": 86,
 			"from": "09:00:00",
-			"to": "17:00:00",
+			"to": "18:00:00",
 			"fee_type": "Free",
 			"sessions": [
 				{
-					"session_id": "36dbe9ab-6489-4ecd-acc7-6239e811d39a",
-					"date": "13-05-2021",
+					"session_id": "b25118e7-cdd1-4a66-981d-0502fb746061",
+					"date": "16-05-2021",
 					"available_capacity": 0,
-					"min_age_limit": 45,
+					"min_age_limit": 18,
 					"vaccine": "COVISHIELD",
 					"slots": [
 						"09:00AM-11:00AM",
 						"11:00AM-01:00PM",
 						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
 				},
 				{
-					"session_id": "63146517-9ac2-4d51-8ac7-099b88049635",
-					"date": "14-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "c87c6b75-5ab2-4087-8d31-0e375c872be4",
-					"date": "15-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				}
-			]
-		},
-		{
-			"center_id": 563048,
-			"name": "G.B.Pant Hospital DH SITE 2",
-			"address": "J.L.N Marg, Delhi Gate, New Delhi 110001",
-			"state_name": "Delhi",
-			"district_name": "Central Delhi",
-			"block_name": "Not Applicable",
-			"pincode": 110001,
-			"lat": 28,
-			"long": 77,
-			"from": "09:00:00",
-			"to": "21:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "e0073ac1-9aef-4941-81f7-3dae48e0c401",
-					"date": "13-05-2021",
-					"available_capacity": 2,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-12:00PM",
-						"12:00PM-03:00PM",
-						"03:00PM-06:00PM",
-						"06:00PM-09:00PM"
-					]
-				},
-				{
-					"session_id": "2e35760e-ce6c-4eb2-ae63-79aca7407668",
-					"date": "15-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-12:00PM",
-						"12:00PM-03:00PM",
-						"03:00PM-06:00PM",
-						"06:00PM-09:00PM"
-					]
-				},
-				{
-					"session_id": "e992eae0-0c41-4a20-b905-d35c2c668b07",
+					"session_id": "b2285fcd-e324-4514-924e-f38bfc1645dc",
 					"date": "17-05-2021",
 					"available_capacity": 0,
-					"min_age_limit": 45,
+					"min_age_limit": 18,
 					"vaccine": "COVISHIELD",
 					"slots": [
-						"09:00AM-12:00PM",
-						"12:00PM-03:00PM",
-						"03:00PM-06:00PM",
-						"06:00PM-09:00PM"
-					]
-				},
-				{
-					"session_id": "90c33845-0c82-4387-aa02-6c910ba87c45",
-					"date": "18-05-2021",
-					"available_capacity": 111,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-12:00PM",
-						"12:00PM-03:00PM",
-						"03:00PM-06:00PM",
-						"06:00PM-09:00PM"
-					]
-				},
-				{
-					"session_id": "f3e2e33c-2407-4135-94b5-3827269ee9a7",
-					"date": "19-05-2021",
-					"available_capacity": 153,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-12:00PM",
-						"12:00PM-03:00PM",
-						"03:00PM-06:00PM",
-						"06:00PM-09:00PM"
-					]
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
 				}
 			]
 		},
 		{
-			"center_id": 662447,
-			"name": "ICGS Delhi",
-			"address": "MI Room, National Stadium Complex, New Delhi, 110001",
-			"state_name": "Delhi",
-			"district_name": "New Delhi",
-			"block_name": "Not Applicable",
-			"pincode": 110001,
-			"lat": 28,
-			"long": 77,
+			"center_id": 641874,
+			"name": "SAVITRI DEVI GIRL HIGH SCHOOL",
+			"address": "PHC TEGHRA BEGUSARAI",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Teghra",
+			"pincode": 851133,
+			"lat": 25,
+			"long": 86,
 			"from": "09:00:00",
-			"to": "17:00:00",
+			"to": "18:00:00",
 			"fee_type": "Free",
 			"sessions": [
 				{
-					"session_id": "dc903012-8070-4c6f-82fb-2e3ba5e052d0",
-					"date": "13-05-2021",
+					"session_id": "99d78184-0963-46a4-80d5-742a7aa9679a",
+					"date": "16-05-2021",
 					"available_capacity": 0,
-					"min_age_limit": 45,
+					"min_age_limit": 18,
 					"vaccine": "COVISHIELD",
 					"slots": [
 						"09:00AM-11:00AM",
 						"11:00AM-01:00PM",
 						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
 				},
 				{
-					"session_id": "2c2995f1-8647-4527-a957-fa3a06283da8",
-					"date": "14-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "a628c350-ec1b-46d2-b17f-757f04899122",
-					"date": "15-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "0c0a4a3f-d5d9-4d5d-b8ca-8b1936757105",
+					"session_id": "30823841-0461-40bf-a04f-7e95f2a4e1ec",
 					"date": "17-05-2021",
 					"available_capacity": 0,
-					"min_age_limit": 45,
+					"min_age_limit": 18,
 					"vaccine": "COVISHIELD",
 					"slots": [
 						"09:00AM-11:00AM",
 						"11:00AM-01:00PM",
 						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "29d11af6-97aa-425f-ba0f-1f47df9a1489",
-					"date": "18-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "780e2e0b-19d7-42dd-843a-6db81a0db601",
-					"date": "19-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
 				}
 			]
 		},
 		{
-			"center_id": 636309,
-			"name": "DGD Patiala House Court",
-			"address": "Tilak Marg New Delhi",
-			"state_name": "Delhi",
-			"district_name": "New Delhi",
-			"block_name": "Not Applicable",
-			"pincode": 110001,
-			"lat": 0,
-			"long": 0,
+			"center_id": 526873,
+			"name": "KISHAN BHAWAN BIRPUR",
+			"address": "Birpur PHC",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Birpur",
+			"pincode": 851227,
+			"lat": 25,
+			"long": 86,
 			"from": "09:00:00",
-			"to": "17:00:00",
+			"to": "18:00:00",
 			"fee_type": "Free",
 			"sessions": [
 				{
-					"session_id": "310584f7-3779-42e3-8c29-068e16f88e7a",
-					"date": "13-05-2021",
+					"session_id": "8498c973-4300-4893-b7e9-745926edc71f",
+					"date": "16-05-2021",
 					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				},
+				{
+					"session_id": "fe91647f-1d87-43c5-9427-7bd6572f2dc1",
+					"date": "16-05-2021",
+					"available_capacity": 20,
 					"min_age_limit": 45,
 					"vaccine": "COVISHIELD",
 					"slots": [
 						"09:00AM-11:00AM",
 						"11:00AM-01:00PM",
 						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 20,
+					"available_capacity_dose2": 0
 				},
 				{
-					"session_id": "3a9cb542-8907-43dd-8a4e-63c798efb5ad",
-					"date": "15-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "54eb8db5-d3aa-4b6d-9999-a4f6efdb19f8",
+					"session_id": "21f79152-6539-45a5-b0a2-ede3c82553f9",
 					"date": "17-05-2021",
 					"available_capacity": 0,
-					"min_age_limit": 45,
+					"min_age_limit": 18,
 					"vaccine": "COVISHIELD",
 					"slots": [
 						"09:00AM-11:00AM",
 						"11:00AM-01:00PM",
 						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "5d1714fd-3696-4451-8f4f-e5ae8bdf206b",
-					"date": "18-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "196586fc-4f17-43cb-a9f0-0e7423052378",
-					"date": "19-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
 				}
 			]
 		},
 		{
-			"center_id": 8815,
-			"name": "MCW Reading Road NDMC PHC",
-			"address": "Old Auto Workshop Building Mandir Marg New Delhi -110001",
-			"state_name": "Delhi",
-			"district_name": "New Delhi",
-			"block_name": "Not Applicable",
-			"pincode": 110001,
-			"lat": 28,
-			"long": 77,
+			"center_id": 572077,
+			"name": "MIDDLE SCHOOL BALIYA",
+			"address": "BALIYA PHC",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Baliya",
+			"pincode": 851211,
+			"lat": 25,
+			"long": 86,
 			"from": "09:00:00",
-			"to": "17:00:00",
+			"to": "18:00:00",
 			"fee_type": "Free",
 			"sessions": [
 				{
-					"session_id": "daa2ee7d-62f3-441c-a05b-d5b079012bc4",
-					"date": "13-05-2021",
+					"session_id": "a76cddbd-59bb-4d83-b4e2-4ff8324d73ff",
+					"date": "16-05-2021",
+					"available_capacity": 37,
+					"min_age_limit": 45,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 37,
+					"available_capacity_dose2": 0
+				},
+				{
+					"session_id": "b43b77c6-d2e4-4799-8073-d073ceeda8b5",
+					"date": "16-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				},
+				{
+					"session_id": "73ace48f-d42b-40e6-8553-b1c6b49707c8",
+					"date": "17-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 571257,
+			"name": "OLD BRC BHAWAN BAKHRI",
+			"address": "BAKHARI",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Bakhari",
+			"pincode": 848201,
+			"lat": 25,
+			"long": 86,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "18de1476-eeb4-4add-b00d-23855700a579",
+					"date": "16-05-2021",
+					"available_capacity": 8,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 8
+				},
+				{
+					"session_id": "3f44d9cf-8ad9-47de-abe4-3cff06f0024a",
+					"date": "17-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 576716,
+			"name": "AYURVEDIK COLLAGE BEGUSARAI",
+			"address": "AYURVEDIK COLLAGE BEGUSARAI",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Begusarai Sadar",
+			"pincode": 851101,
+			"lat": 25,
+			"long": 86,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "81485b26-5eb3-43cc-b0bd-6eb02562d198",
+					"date": "16-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 45,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				},
+				{
+					"session_id": "2ce24477-3ace-4c1c-8733-5dd6e59fb345",
+					"date": "16-05-2021",
+					"available_capacity": 7,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 7
+				},
+				{
+					"session_id": "c5a80e07-5278-4452-8b86-d8135196cc73",
+					"date": "17-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 644124,
+			"name": "BANBARIPUR HSC",
+			"address": "BANBARIPUR BHAGWANPUR BEGUSARAI BIHAR",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Bhagwanpur",
+			"pincode": 851133,
+			"lat": 25,
+			"long": 86,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "b7a1a7bb-acfd-4020-9de4-344986d10353",
+					"date": "16-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				},
+				{
+					"session_id": "947b72d9-4829-4fc3-85e8-1e463c7c0e1f",
+					"date": "17-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 590895,
+			"name": "POLICE LINE BEGUSARAI",
+			"address": "POLICE LINE BEGUSARAI",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Begusarai Sadar",
+			"pincode": 851101,
+			"lat": 25,
+			"long": 86,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "2caf5766-340f-4444-a31e-7216c8f1f5d0",
+					"date": "16-05-2021",
 					"available_capacity": 1,
 					"min_age_limit": 45,
 					"vaccine": "COVISHIELD",
@@ -335,24 +391,13 @@
 						"09:00AM-11:00AM",
 						"11:00AM-01:00PM",
 						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 1
 				},
 				{
-					"session_id": "7127d920-c49b-44b8-8170-fd56c740381d",
-					"date": "15-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "7e152c4a-fca9-4bd0-b86e-d3ae67f6329f",
+					"session_id": "08daefeb-39eb-4a5e-82b0-a9e0f14e166e",
 					"date": "17-05-2021",
 					"available_capacity": 0,
 					"min_age_limit": 45,
@@ -361,11 +406,13 @@
 						"09:00AM-11:00AM",
 						"11:00AM-01:00PM",
 						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
 				},
 				{
-					"session_id": "bb38e2dc-101b-4fe3-86b2-2ff54768639e",
+					"session_id": "95dd47f4-e91d-49d9-89f2-9b0e67f992a2",
 					"date": "18-05-2021",
 					"available_capacity": 0,
 					"min_age_limit": 45,
@@ -374,28 +421,14 @@
 						"09:00AM-11:00AM",
 						"11:00AM-01:00PM",
 						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				}
-			]
-		},
-		{
-			"center_id": 8817,
-			"name": "MCW Shishu Kalyan Kendra PHC",
-			"address": "Shaheed Bhagat Singh Road Poly Clinic",
-			"state_name": "Delhi",
-			"district_name": "New Delhi",
-			"block_name": "Not Applicable",
-			"pincode": 110001,
-			"lat": 28,
-			"long": 77,
-			"from": "09:00:00",
-			"to": "17:00:00",
-			"fee_type": "Free",
-			"sessions": [
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				},
 				{
-					"session_id": "cd81b162-0fe1-449e-af7a-d73762654c42",
-					"date": "15-05-2021",
+					"session_id": "dbeb10d5-2186-4f4e-aa84-bf15ab8f080e",
+					"date": "19-05-2021",
 					"available_capacity": 0,
 					"min_age_limit": 45,
 					"vaccine": "COVISHIELD",
@@ -403,12 +436,14 @@
 						"09:00AM-11:00AM",
 						"11:00AM-01:00PM",
 						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
 				},
 				{
-					"session_id": "88d5ace6-395b-4b77-b1ae-fe46d38b6a60",
-					"date": "17-05-2021",
+					"session_id": "ad26c418-6477-4019-a830-3756d05797f7",
+					"date": "20-05-2021",
 					"available_capacity": 1,
 					"min_age_limit": 45,
 					"vaccine": "COVISHIELD",
@@ -416,798 +451,856 @@
 						"09:00AM-11:00AM",
 						"11:00AM-01:00PM",
 						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "950d3460-ec5d-4013-9b95-25ceaf14cfa1",
-					"date": "18-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 1
 				}
 			]
 		},
 		{
-			"center_id": 605450,
-			"name": "Supreme Court Complex",
-			"address": "Tilak Marg, New Delhi-110001",
-			"state_name": "Delhi",
-			"district_name": "New Delhi",
-			"block_name": "Not Applicable",
-			"pincode": 110001,
-			"lat": 28,
-			"long": 77,
+			"center_id": 571267,
+			"name": "I.B. BHAWAN BHAGWANPUR",
+			"address": "BHAGWANPUR PHC",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Bhagwanpur",
+			"pincode": 851120,
+			"lat": 25,
+			"long": 85,
 			"from": "09:00:00",
-			"to": "17:00:00",
+			"to": "18:00:00",
 			"fee_type": "Free",
 			"sessions": [
 				{
-					"session_id": "25e92e02-7e9b-46a0-a3c4-ae65457a98bf",
-					"date": "15-05-2021",
-					"available_capacity": 0,
+					"session_id": "75a4fbe3-4b1e-4727-afd7-14c73f80043a",
+					"date": "16-05-2021",
+					"available_capacity": 29,
 					"min_age_limit": 45,
 					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "34a01cc1-8479-4eeb-9f3b-6271ea316107",
-					"date": "17-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "b1c982c5-54ed-4258-b46d-49b8d09f1b02",
-					"date": "18-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "85083f88-6f62-4c6e-a5f1-52b767813f8a",
-					"date": "19-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				}
-			]
-		},
-		{
-			"center_id": 580925,
-			"name": "RML Site 2",
-			"address": "BKS Marg,CP,New Delhi",
-			"state_name": "Delhi",
-			"district_name": "New Delhi",
-			"block_name": "Central Delhi",
-			"pincode": 110001,
-			"lat": 28,
-			"long": 77,
-			"from": "09:00:00",
-			"to": "17:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "214d6ae4-4c89-4048-b24e-481314eb43ff",
-					"date": "15-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "b74fad5e-140b-4cec-a632-518f23150710",
-					"date": "17-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "bce8d8b3-a6f7-4f60-a903-afc61ee1b195",
-					"date": "18-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "961a6bf0-6f6a-4bcb-ba9d-e537f623effe",
-					"date": "19-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				}
-			]
-		},
-		{
-			"center_id": 8785,
-			"name": "CGHS Dispensary South Avenue",
-			"address": "153, South Avenue , New Delhi-11",
-			"state_name": "Delhi",
-			"district_name": "New Delhi",
-			"block_name": "Not Applicable",
-			"pincode": 110001,
-			"lat": 28,
-			"long": 77,
-			"from": "09:00:00",
-			"to": "17:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "f69e1b41-d769-4f80-9b2a-e157f6685f0c",
-					"date": "15-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "b2d87235-2855-49d4-98a8-d002f7da4786",
-					"date": "17-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "06b9d73d-d4b8-4eb9-a684-6cd2153f04ee",
-					"date": "18-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				}
-			]
-		},
-		{
-			"center_id": 563206,
-			"name": "RML Site 1",
-			"address": "Baba Kharak Singh Marg",
-			"state_name": "Delhi",
-			"district_name": "New Delhi",
-			"block_name": "Central Delhi",
-			"pincode": 110001,
-			"lat": 28,
-			"long": 77,
-			"from": "09:00:00",
-			"to": "17:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "c6377599-97f8-4845-807b-b7fa4aac8ac0",
-					"date": "15-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "b11f2199-f234-4a28-9ee6-9ca17841021e",
-					"date": "17-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "4ebedff7-0263-415c-9576-1bd5f700d767",
-					"date": "18-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "e8251372-c19b-4487-8b24-54d69ad9e57f",
-					"date": "19-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				}
-			]
-		},
-		{
-			"center_id": 627344,
-			"name": "DGHC Supreme Court",
-			"address": "DGHC Supreme Court Complex, Bhagwan Das Road",
-			"state_name": "Delhi",
-			"district_name": "New Delhi",
-			"block_name": "Not Applicable",
-			"pincode": 110001,
-			"lat": 28,
-			"long": 77,
-			"from": "09:00:00",
-			"to": "17:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "62e492c9-651a-47e6-8d1f-602debc65e39",
-					"date": "15-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "740fbd89-f847-4f94-b8a9-6900d894aabd",
-					"date": "17-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "5cd8f740-e35c-4041-b157-3e4d1cc84858",
-					"date": "18-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				}
-			]
-		},
-		{
-			"center_id": 613502,
-			"name": "Parliament House",
-			"address": "Sansad Marg,anpath, Connaught Place, New Delhi",
-			"state_name": "Delhi",
-			"district_name": "New Delhi",
-			"block_name": "Not Applicable",
-			"pincode": 110001,
-			"lat": 0,
-			"long": 0,
-			"from": "09:00:00",
-			"to": "17:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "b45f0456-fc76-47ea-8e4f-da4e75801061",
-					"date": "15-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "9c1b02bd-a893-42ed-b7d0-0809c11e1131",
-					"date": "17-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "7704694b-23c1-4784-8e9e-8154b563bc6f",
-					"date": "18-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "9cd17687-34b1-403e-8ab3-cddcc1dec065",
-					"date": "19-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				}
-			]
-		},
-		{
-			"center_id": 8811,
-			"name": "MCW Babar Road NDMC PHC",
-			"address": "42, Dispensary Complex, 1st Floor, Babar Road, New Delhi 110001",
-			"state_name": "Delhi",
-			"district_name": "New Delhi",
-			"block_name": "Not Applicable",
-			"pincode": 110001,
-			"lat": 28,
-			"long": 77,
-			"from": "09:00:00",
-			"to": "17:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "a48eaee7-641d-42bf-8be2-bce3a8e66855",
-					"date": "15-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "e6ed0825-c15d-451a-a1bc-7fc87a28e328",
-					"date": "17-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "3064d868-e7ea-446e-94e9-b20c8c302ab5",
-					"date": "18-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				}
-			]
-		},
-		{
-			"center_id": 563193,
-			"name": "LHMC CVC 1",
-			"address": "C- 604 Connaught Circus Bangla Sahib Rd DIZ Area Connaught Place New Delhi",
-			"state_name": "Delhi",
-			"district_name": "New Delhi",
-			"block_name": "Central Delhi",
-			"pincode": 110001,
-			"lat": 28,
-			"long": 77,
-			"from": "09:00:00",
-			"to": "17:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "bc289779-652d-4883-b0ed-92a638e9d7d1",
-					"date": "15-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "f6e20dc5-a321-4b8c-a898-aba328b7fda2",
-					"date": "17-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "5af9f90f-1327-47c6-89b3-42c07e22fe45",
-					"date": "18-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "f392d195-483d-4466-a06b-ac7881436c70",
-					"date": "19-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				}
-			]
-		},
-		{
-			"center_id": 679800,
-			"name": "MHA North Block",
-			"address": "North Block Central Secretariat New Delhi Delhi 110001",
-			"state_name": "Delhi",
-			"district_name": "New Delhi",
-			"block_name": "Central Delhi",
-			"pincode": 110001,
-			"lat": 0,
-			"long": 0,
-			"from": "09:00:00",
-			"to": "17:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "558d5c8a-dbfc-4bc9-8ae6-bc17382ae5a3",
-					"date": "15-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "27d8cb8b-5382-4356-ba89-a4c3900868c2",
-					"date": "17-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "143a456d-4943-43b3-9705-b5e41db1aae1",
-					"date": "18-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "565cd9e7-f4ac-4cf7-8bc5-63aa1e130bb0",
-					"date": "19-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				}
-			]
-		},
-		{
-			"center_id": 576584,
-			"name": "LHMC CVC 2",
-			"address": "C- 604 Connaught Circus Bangla Sahib Rd DIZ Area Connaught Place New Delhi",
-			"state_name": "Delhi",
-			"district_name": "New Delhi",
-			"block_name": "Central Delhi",
-			"pincode": 110001,
-			"lat": 28,
-			"long": 77,
-			"from": "09:00:00",
-			"to": "17:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "d3090e55-6e3d-421d-89f1-af5ae950c26c",
-					"date": "15-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "f0b0b354-a985-4efe-9c13-e3ef4380aff9",
-					"date": "17-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "7c513952-f36d-4635-8382-11419abf43a9",
-					"date": "18-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "f4c822ee-8866-44de-895a-efb7440b1286",
-					"date": "19-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				}
-			]
-		},
-		{
-			"center_id": 632961,
-			"name": "Rouse Avenue Court",
-			"address": "Rouse Avenue Court Complex",
-			"state_name": "Delhi",
-			"district_name": "Central Delhi",
-			"block_name": "Not Applicable",
-			"pincode": 110001,
-			"lat": 28,
-			"long": 77,
-			"from": "09:00:00",
-			"to": "17:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "f0b95ef0-eccc-4be2-9f76-e19c996687ff",
-					"date": "15-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
-				},
-				{
-					"session_id": "7744b4fa-e489-4e8e-8a1a-803249b66614",
-					"date": "17-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
 					"slots": [
 						"09:00AM-11:00AM",
 						"11:00AM-01:00PM",
 						"01:00PM-03:00PM",
 						"03:00PM-06:00PM"
-					]
+					],
+					"available_capacity_dose1": 29,
+					"available_capacity_dose2": 0
 				},
 				{
-					"session_id": "48fd218c-2338-4651-9445-0eaaeffedec4",
-					"date": "18-05-2021",
+					"session_id": "99c4abda-527d-47dc-96bb-779846473287",
+					"date": "16-05-2021",
 					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
 					"slots": [
 						"09:00AM-11:00AM",
 						"11:00AM-01:00PM",
 						"01:00PM-03:00PM",
 						"03:00PM-06:00PM"
-					]
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
 				},
 				{
-					"session_id": "52ec55ed-6774-4402-97c4-2b21b9061d79",
-					"date": "19-05-2021",
+					"session_id": "18afa3d9-2737-425e-9bdb-69002171ae74",
+					"date": "17-05-2021",
 					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
 					"slots": [
 						"09:00AM-11:00AM",
 						"11:00AM-01:00PM",
 						"01:00PM-03:00PM",
 						"03:00PM-06:00PM"
-					]
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
 				}
 			]
 		},
 		{
-			"center_id": 584471,
-			"name": "RML Site 3",
-			"address": "BKS Marg,CP,New Delhi",
-			"state_name": "Delhi",
-			"district_name": "New Delhi",
-			"block_name": "Central Delhi",
-			"pincode": 110001,
-			"lat": 28,
-			"long": 77,
+			"center_id": 526871,
+			"name": "SADAR HOSPITAL BEGUSARAI",
+			"address": "Begusarai Urban UHC",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Begusarai Sadar",
+			"pincode": 851101,
+			"lat": 25,
+			"long": 86,
 			"from": "09:00:00",
-			"to": "17:00:00",
+			"to": "18:00:00",
 			"fee_type": "Free",
 			"sessions": [
 				{
-					"session_id": "331ce51e-bb13-4c0d-a5d7-929e696b477c",
-					"date": "15-05-2021",
+					"session_id": "de404eb1-dfe9-44e4-a291-d1accf2e1a0d",
+					"date": "16-05-2021",
 					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
 					"slots": [
 						"09:00AM-11:00AM",
 						"11:00AM-01:00PM",
 						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
 				},
 				{
-					"session_id": "091bbacf-964e-472b-a085-fc0deb7715b1",
+					"session_id": "aafec935-7218-4762-b34c-2ead4926f17f",
 					"date": "17-05-2021",
 					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
 					"slots": [
 						"09:00AM-11:00AM",
 						"11:00AM-01:00PM",
 						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 526875,
+			"name": "BRC BHAWAN CHHAURAHI",
+			"address": "Chhurahi PHC",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Chhurahi",
+			"pincode": 848202,
+			"lat": 25,
+			"long": 86,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "87991a7c-7719-48a8-a38a-8b5627dd5d66",
+					"date": "16-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
 				},
 				{
-					"session_id": "1c7a5a42-0078-4d22-944b-3b20cdcbafd2",
-					"date": "18-05-2021",
+					"session_id": "037c7d06-76bc-4888-920a-be11765b2891",
+					"date": "17-05-2021",
 					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
 					"slots": [
 						"09:00AM-11:00AM",
 						"11:00AM-01:00PM",
 						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 562603,
+			"name": "UPHC BISHANPUR",
+			"address": "Dinkar Bhawan Town Hall Begusarai",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Begusarai Sadar",
+			"pincode": 851101,
+			"lat": 25,
+			"long": 86,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "ed9264d0-63d6-46aa-9067-85fe6b6932b3",
+					"date": "16-05-2021",
+					"available_capacity": 1,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 1
 				},
 				{
-					"session_id": "4acfdde4-70da-46c0-8c96-fc4963d530f6",
-					"date": "19-05-2021",
+					"session_id": "a43342e8-0d83-4a57-87e3-a77cdad8bd49",
+					"date": "17-05-2021",
 					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
 					"slots": [
 						"09:00AM-11:00AM",
 						"11:00AM-01:00PM",
 						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					]
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 615956,
+			"name": "RAJAURA HSC",
+			"address": "Unnamed Road Sikandarpur Bihar",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Begusarai Sadar",
+			"pincode": 851135,
+			"lat": 25,
+			"long": 86,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "63377819-08a2-4088-b293-c62b8ce973de",
+					"date": "16-05-2021",
+					"available_capacity": 23,
+					"min_age_limit": 45,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 23,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 526878,
+			"name": "Khodawandpur PHC RI",
+			"address": "Khodawandpur PHC",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Khodawandpur",
+			"pincode": 848202,
+			"lat": 25,
+			"long": 86,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "cb8a03db-6952-46a2-be8d-688fa6153d8c",
+					"date": "16-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				},
+				{
+					"session_id": "be67591b-08f9-4d9e-9404-c0b2343e0671",
+					"date": "17-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 526869,
+			"name": "KISHAN BHAWAN BARAUNI",
+			"address": "Barauni PHC",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Barauni",
+			"pincode": 851112,
+			"lat": 25,
+			"long": 86,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "5ca5e5ab-2569-425c-b853-20071a8c9c06",
+					"date": "16-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				},
+				{
+					"session_id": "fc04ac1d-6212-44cc-adcd-4b23082673d2",
+					"date": "17-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 526883,
+			"name": "HIGH SCHOOL SARLAHI SHAMHO",
+			"address": "Shamho PHC",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Shamho",
+			"pincode": 811106,
+			"lat": 25,
+			"long": 86,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "b1cc392c-c269-4f7f-9758-b12c662751b0",
+					"date": "16-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				},
+				{
+					"session_id": "057c2aeb-5261-4894-b0df-8d9b9659d062",
+					"date": "16-05-2021",
+					"available_capacity": 35,
+					"min_age_limit": 45,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 35,
+					"available_capacity_dose2": 0
+				},
+				{
+					"session_id": "843674ac-7bdd-45c7-be20-9a5f28039308",
+					"date": "17-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 628698,
+			"name": "SARKAR BHAWAN SUJJA",
+			"address": "SUJJA BEGUSARAI SADAR BLOCK BEGUSARAI",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Begusarai Sadar",
+			"pincode": 851218,
+			"lat": 25,
+			"long": 86,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "1257b20b-f37a-4dd7-9fe5-e5e94bc57636",
+					"date": "16-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 45,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 526877,
+			"name": "MIDDLE SCHOOL GADHPURA",
+			"address": "Garhpura PHC",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Garhpura",
+			"pincode": 848201,
+			"lat": 25,
+			"long": 86,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "919c9107-ea09-4264-b0f5-f5e553cd44e6",
+					"date": "16-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				},
+				{
+					"session_id": "b74c56dc-bfca-4a35-8b9c-2b2026c2c667",
+					"date": "17-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 526866,
+			"name": "MIDDLE SCHOOL NAREPUR BACHWARA",
+			"address": "Bachwara PHC",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Bachwara",
+			"pincode": 851111,
+			"lat": 25,
+			"long": 85,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "a6ba5b06-6274-4f9c-89a1-c5c5d321e40b",
+					"date": "16-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				},
+				{
+					"session_id": "9d29dd57-1ec2-45a8-8814-baf91399cfb9",
+					"date": "17-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 526879,
+			"name": "UGM SCHOOL MANSURCHAK",
+			"address": "Mansoorchak PHC",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Mansoorchak",
+			"pincode": 851128,
+			"lat": 25,
+			"long": 86,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "d99c6db3-a54d-42ab-9ada-ca5b47590ac0",
+					"date": "16-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				},
+				{
+					"session_id": "958c2e34-a0a5-4ba2-985a-fa963be3d919",
+					"date": "17-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 276296,
+			"name": "Sokhara Hsc",
+			"address": "SOKHARA HSC",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Teghra",
+			"pincode": 851112,
+			"lat": 25,
+			"long": 85,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "bf7446d3-8556-4bf4-bc7f-54e1d690816c",
+					"date": "16-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				},
+				{
+					"session_id": "30fb5883-2c3c-40dd-8e5f-82dcfa0a879e",
+					"date": "17-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 641857,
+			"name": "KENDRIYA VIDYALY TOWNSIP BGS",
+			"address": "REFAINORY TOWNSHIP HOSPITAL BEGUSARAI",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Begusarai Sadar",
+			"pincode": 851101,
+			"lat": 25,
+			"long": 86,
+			"from": "10:00:00",
+			"to": "16:30:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "9af2dbed-002c-442f-ae6b-1fb33f12c604",
+					"date": "17-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"10:00AM-11:00AM",
+						"11:00AM-12:00PM",
+						"12:00PM-01:00PM",
+						"01:00PM-04:30PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 526882,
+			"name": "RAILWAY SCHOOL SAHEBPURKAMAL",
+			"address": "Sahebpur Kamal PHC",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Sahebpur Kamal",
+			"pincode": 851217,
+			"lat": 25,
+			"long": 86,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "f390e8e4-8359-4220-a0f5-e16fcc11d8e9",
+					"date": "17-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 526880,
+			"name": "VACCINATION BHAWAN MATIHANI",
+			"address": "Matihani PHC",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Matihani",
+			"pincode": 851129,
+			"lat": 25,
+			"long": 86,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "1065a7b5-302d-4bcd-b6bb-16d399770341",
+					"date": "17-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 272873,
+			"name": "BAGDOV HSC",
+			"address": "BAGDOV HSC MATIHANI",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Matihani",
+			"pincode": 851129,
+			"lat": 25,
+			"long": 86,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "6dca8a45-14e1-405d-b265-06b709b93d72",
+					"date": "17-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 526876,
+			"name": "Dandari PHC RI",
+			"address": "Dandari PHC",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Dandari",
+			"pincode": 851211,
+			"lat": 25,
+			"long": 86,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "c73c364e-1db7-4fc6-b292-f0ca2e43d461",
+					"date": "17-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 694005,
+			"name": "BP ROY MEMORIAL HOSPITA 2",
+			"address": "BEGUSARTAI POKHARIYA",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Begusarai Sadar",
+			"pincode": 851101,
+			"lat": 25,
+			"long": 86,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "189b9f7c-def4-4c8d-9372-a7dc3f517608",
+					"date": "17-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 526874,
+			"name": "U M SCHOOL CH BARIYARPUR",
+			"address": "Cheriya Bariyarpur PHC",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Cheriya Bariyarpur",
+			"pincode": 851132,
+			"lat": 25,
+			"long": 86,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "ad8b8e1c-be7c-4796-a170-6688f8660b9f",
+					"date": "17-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 271607,
+			"name": "KANYA MADHYA VIDYALY MANJHAUL",
+			"address": "MANJHAUL",
+			"state_name": "Bihar",
+			"district_name": "Begusarai",
+			"block_name": "Cheriya Bariyarpur",
+			"pincode": 851132,
+			"lat": 25,
+			"long": 86,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "3577c658-701b-445c-8d6f-9a9add63128a",
+					"date": "17-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
 				}
 			]
 		}
