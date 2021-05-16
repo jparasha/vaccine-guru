@@ -7,8 +7,8 @@
 .centers label {
     cursor: pointer;
     text-indent: -9999px;
-    width: 85px;
-    height: 40px;
+    width: 70px;
+    height: 30px;
     background: grey;
     display: block;
     border-radius: 100px;
@@ -20,8 +20,8 @@
     position: absolute;
     top: 5px;
     left: 5px;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     background: #fff;
     border-radius: 90px;
     transition: 0.3s;
@@ -37,68 +37,23 @@
 }
 
 .centers label:active:after {
-    width: 85px;
+    width: 70;
 }
 
 
 @media screen and (max-width: 768px) {
     .centers label {
-        width: 60px;
-        height: 30px;
+        width: 50px;
+        height: 25px;
     }
 
     .centers label:after {
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
     }
 
     .centers label:active:after {
-        width: 20px;
+        width: 15px;
     }
 
 }
-
-/* .switch span {
-    position: relative;
-    top: 5px;
-    font-size: 16px;
-    color: #4e4c4a;
-    padding-right: 8px;
-}
-
-.switch .switch-label {
-    position: relative;
-    display: inline-block;
-    width: 72px;
-    height: 32px;
-    margin-top: 12px;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-    margin: 4px 0 0;
-    margin-top: 1px\9;
-    line-height: normal;
-}
-
-.switch .switch-btn::before {
-    position: absolute;
-    content: "";
-    height: 24px;
-    width: 24px;
-    left: 4px;
-    bottom: 4px;
-    background-color: #fff;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.switch .switch-btn.round-btn::before {
-    border-radius: 50%;
-}
-
-.switch input:checked+.switch-btn::before {
-    -webkit-transform: translateX(40px);
-    -ms-transform: translateX(40px);
-    transform: translateX(40px);
-} */
