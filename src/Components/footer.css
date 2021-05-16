@@ -1,0 +1,18 @@
+footer {
+    width: 100%;
+    display: flex;
+    padding: 1.2rem 0;
+    color: var(--white);
+    align-items: center;
+    background: var(--blue);
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+footer .footer__primary a {
+    color: var(--white);
+}
+
+footer .footer__text {
+    margin-bottom: 0.3rem;
+}

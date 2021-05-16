@@ -61,7 +61,7 @@
 }
 
 .center__title-primary {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: bolder;
 }
 
@@ -96,13 +96,30 @@
     border-bottom-left-radius: 12px;
 }
 
+.card__image {
+    right: 0px;
+    height: 30%;
+    bottom: 15px;
+    opacity: 0.1;
+    position: absolute;
+}
+
+.center .link__new-tab-icon {
+    height: 10px;
+    width: 10px;
+    object-fit: contain;
+}
+
+.center .link__new-tab {
+    color: var(--blue);
+}
 
 @media screen and (max-width: 768px) {
     .centers {
         padding: 0;
         width: 100vw;
         margin: 0 auto;
-        margin-bottom: 50%;
+        margin-bottom: 5rem;
     }
 
     .center {
@@ -121,7 +138,7 @@
     }
 
     .center__title-primary {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-weight: bolder;
     }
 
