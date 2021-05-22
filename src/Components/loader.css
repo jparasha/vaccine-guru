@@ -1,3 +1,7 @@
+.centers.loader-section {
+    margin-top: 5%;
+}
+
 .card.is-loading .center__title .center__title-secondary,
 .card.is-loading .center__title .center__title-primary,
 .results-container.is-loading .result-count,

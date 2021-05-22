@@ -36,7 +36,6 @@ const Results = () => {
 const ResultsContainer = ({ count = 0 }) => {
     const cards = [];
     let cardNumber = 1;
-    cards.push(<Results key={'containerLoader'} />);
     while (cardNumber <= count) {
         cards.push(<CardSkeleton key={cardNumber} />);
         cardNumber++;
