@@ -18,9 +18,8 @@ function App() {
   const [hospitals, setHospitals] = useState(null);
   const [searchByPin, setSearchByPin] = useState(true);
   const [errors, setErrors] = useState(null);
+  const [loader, setLoader] = useState(false);
 
-  let resultRef = null;
-  const setResultRef = ref => (resultRef = (resultRef || ref));
   const isProduction = (process.env.NODE_ENV === 'production');
   const { REACT_APP_BASE_URL = '', REACT_APP_IP_URL = '', REACT_APP_ZIP_URL = '', REACT_APP_STATES_URL = '', REACT_APP_DISTRICTS_URL = '' } = process.env || {};
 
@@ -57,20 +56,16 @@ function App() {
   };
 
   const searchHandler = location => {
+    setLoader(true);
     let URL = `${REACT_APP_BASE_URL}/${searchByPin ? 'calendarByPin?pincode' : 'calendarByDistrict?district_id'}=${location}&date=${getFormattedDate()}`;
-    console.log(URL);
     if (!isProduction) {
       URL = '/services/847211.json';
     }
     axios.get(URL)
       .then(({ data = {} }) => {
         setHospitals(data);
+        setLoader(false);
         setErrors(false);
-        if (resultRef) {
-          setTimeout(() => {
-            resultRef.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-          });
-        }
       })
       .catch(() => setErrors(true));
   };
@@ -121,10 +116,10 @@ function App() {
         onDistrictChange={onDistrictChange}
       />
       {<ResultComponent
+        loader={loader}
         errors={errors}
         data={CONSTANTS}
         response={hospitals}
-        setRef={setResultRef}
       />}
       <FooterComponent constants={CONSTANTS} />
     </div>
