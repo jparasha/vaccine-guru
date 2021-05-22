@@ -1,5 +1,5 @@
 import './results.css';
-import { Fragment, useState } from 'react';
+import { Fragment, useEffect, useRef, useState } from 'react';
 import Tile from './Tile';
 import Loader from './Loader';
 
@@ -83,10 +83,10 @@ const Cards = ({ CONSTANTS, centerData, errors, sorting }) => {
 
 const filteredCenters = (underFortyFive, available, sorting, setSorting, centers) => {
     if (!underFortyFive && !available) {
-        sorting && setSorting(false);
+        sorting && setTimeout(() => setSorting(false), 800);
         return centers;
     }
-    return centers.filter((center = {}) => {
+    const filtered = centers.filter((center = {}) => {
         let isMatching = false;
         let sessionsAvailability = 0;
         center.sessions.forEach((session = {}) => {
@@ -99,31 +99,41 @@ const filteredCenters = (underFortyFive, available, sorting, setSorting, centers
                 isMatching = sessionsAvailability > 0;
             }
         });
-        sorting && setSorting(false);
         return isMatching;
     });
+    sorting && setTimeout(() => setSorting(false), filtered.length ? 800 : 10);
+    return filtered;
 };
 
-const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {}, loader = false, setRef }) => {
+const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {}, loader = false }) => {
     const { centers = [] } = response || {};
     const [underFortyFive, setUnderFortyFive] = useState(false);
     const [available, setAvailable] = useState(false);
     const [sorting, setSorting] = useState(false);
+    const resultRef = useRef(null);
 
     const setFilter = () => {
-        setUnderFortyFive(!underFortyFive);
         !sorting && setSorting(true);
+        setUnderFortyFive(!underFortyFive);
     };
     const setAvailability = () => {
-        setAvailable(!available);
         !sorting && setSorting(true);
+        setAvailable(!available);
     };
+
+    useEffect(() => {
+        if (resultRef && resultRef.current && loader && !errors) {
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            const options = { block: 'start', inline: 'nearest' };
+            resultRef.current.scrollIntoView(isMobile ? options : { ...options, behavior: 'smooth' });
+        }
+    }, [resultRef, loader, errors]);
 
     const centerData = filteredCenters(underFortyFive, available, sorting, setSorting, centers);
 
     return (
         <Fragment>
-            <div className={`centers ${(loader) ? 'loader-section' : ''}`} id='resultCenters' ref={ref => setRef(ref)}>
+            <div className={`centers ${(loader) ? 'loader-section' : ''}`} id='resultCenters' ref={resultRef}>
                 {
                     (loader)
                         ?

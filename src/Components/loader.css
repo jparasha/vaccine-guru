@@ -1,5 +1,6 @@
 .centers.loader-section {
     margin-top: 5%;
+    min-height: 100vh;
 }
 
 .card.is-loading .center__title .center__title-secondary,

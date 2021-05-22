@@ -16,6 +16,7 @@ body {
 .App {
   display: flex;
   margin-top: 50px;
+  max-width: 1400px;
   align-items: center;
   flex-flow: column wrap;
   justify-content: center;
