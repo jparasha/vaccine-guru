@@ -18,6 +18,7 @@ function App() {
   const [hospitals, setHospitals] = useState(null);
   const [searchByPin, setSearchByPin] = useState(true);
   const [errors, setErrors] = useState(null);
+  const [loader, setLoader] = useState(false);
 
   let resultRef = null;
   const setResultRef = ref => (resultRef = (resultRef || ref));
@@ -57,6 +58,7 @@ function App() {
   };
 
   const searchHandler = location => {
+    setLoader(true);
     let URL = `${REACT_APP_BASE_URL}/${searchByPin ? 'calendarByPin?pincode' : 'calendarByDistrict?district_id'}=${location}&date=${getFormattedDate()}`;
     console.log(URL);
     if (!isProduction) {
@@ -66,6 +68,7 @@ function App() {
       .then(({ data = {} }) => {
         setHospitals(data);
         setErrors(false);
+        setLoader(false);
         if (resultRef) {
           setTimeout(() => {
             resultRef.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
@@ -121,6 +124,7 @@ function App() {
         onDistrictChange={onDistrictChange}
       />
       {<ResultComponent
+        loader={loader}
         errors={errors}
         data={CONSTANTS}
         response={hospitals}

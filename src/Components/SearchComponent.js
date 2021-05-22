@@ -26,8 +26,6 @@ const SearchComponent = ({ data = {}, searchHandler, pinCode = '', state = '', d
         }
     };
 
-    console.log(pinCode, allStates, allDistricts);
-
     return (
         <div className='search-component'>
             <img className='search__image' src='/vaccine.jpg' alt='vaccine' />

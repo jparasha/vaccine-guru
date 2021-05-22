@@ -16,3 +16,9 @@ footer .footer__primary a {
 footer .footer__text {
     margin-bottom: 0.3rem;
 }
+
+@media screen and (min-width: 1024px) {
+    footer {
+        margin-top: 5%;
+    }
+}

@@ -1,6 +1,7 @@
 import './results.css';
 import { Fragment, useState } from 'react';
 import Tile from './Tile';
+import Loader from './Loader';
 
 const newTabIcon = text => (
     <a className='link__new-tab' href='https://www.cowin.gov.in/home'>
@@ -9,18 +10,24 @@ const newTabIcon = text => (
     </a>
 );
 
-const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {}, setRef }) => {
+const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {}, loader = false, setRef }) => {
     const { centers = [] } = response || {};
     const [underFortyFive, setUnderFortyFive] = useState(false);
     const [available, setAvailable] = useState(false);
+    const [sorting, setSorting] = useState(false);
 
-
-
-    const setFilter = () => setUnderFortyFive(!underFortyFive);
-    const setAvailability = () => setAvailable(!available);
+    const setFilter = () => {
+        setUnderFortyFive(!underFortyFive);
+        !sorting && setSorting(true);
+    };
+    const setAvailability = () => {
+        setAvailable(!available);
+        !sorting && setSorting(true);
+    };
 
     const filteredCenters = () => {
         if (!underFortyFive && !available) {
+            sorting && setSorting(false);
             return centers;
         }
         return centers.filter((center = {}) => {
@@ -36,11 +43,15 @@ const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {}, s
                     isMatching = sessionsAvailability > 0;
                 }
             });
+            sorting && setSorting(false);
             return isMatching;
         });
     };
     const centerData = filteredCenters();
-    console.log(centerData, underFortyFive, available);
+
+    if (loader || sorting) {
+        return (<Loader count={6} />);
+    }
     return (
         <Fragment>
             <div className='centers' id='resultCenters' ref={ref => setRef(ref)}>
@@ -59,13 +70,12 @@ const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {}, s
                                 <input type="checkbox" id="switch_available" checked={available} onChange={setAvailability} />
                                 <label htmlFor="switch_available" tabIndex='0'>available</label>
                             </div>
-
-
                         </span>}
                     </div>
                 }
                 {
-                    (errors) ?
+                    (errors)
+                        ?
                         <div className='center' >
                             {CONSTANTS.ERROR_MSG || ''}
                         </div>

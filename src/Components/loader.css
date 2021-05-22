@@ -1,0 +1,57 @@
+/* .card .content {
+    padding: 20px 30px;
+} */
+
+
+.card.is-loading .center__title .center__title-secondary,
+.card.is-loading .center__title .center__title-primary,
+.results-container.is-loading .result-count,
+.card.is-loading .center__tiles .tile {
+    background: #eee;
+    background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+    border-radius: 12px;
+    background-size: 200% 100%;
+    -webkit-animation: 1.5s shine linear infinite;
+    animation: 1.5s shine linear infinite;
+}
+
+.card.is-loading .center__title .center__title-secondary,
+.card.is-loading .center__title .center__title-primary {
+    height: 20px;
+    width: 100%;
+}
+
+.results-container.is-loading .result-count {
+    height: 20px;
+    width: 30%;
+}
+
+.card.is-loading .center__tiles .tile {
+    height: 20px;
+    min-width: 10%;
+}
+
+.card.is-loading .center__title .center__title-primary {
+    margin-top: 0;
+    height: 30px;
+}
+
+/* .card.is-loading .center__title {
+    height: 30px;
+} */
+
+/* .card.is-loading p {
+    height: 70px;
+} */
+
+@-webkit-keyframes shine {
+    to {
+        background-position-x: -200%;
+    }
+}
+
+@keyframes shine {
+    to {
+        background-position-x: -200%;
+    }
+}
