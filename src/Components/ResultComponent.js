@@ -48,13 +48,10 @@ const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {}, l
         });
     };
     const centerData = filteredCenters();
-
-    if (loader || sorting) {
-        return (<Loader count={6} />);
-    }
     return (
         <Fragment>
             <div className='centers' id='resultCenters' ref={ref => setRef(ref)}>
+                {(loader || sorting) && <Loader count={6} />}
                 {
                     (errors !== null) &&
                     <div className='results-container'>

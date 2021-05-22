@@ -35,22 +35,16 @@ const Results = () => {
 
 const ResultsContainer = ({ count = 0 }) => {
     const cards = [];
-    let cardNumbers = 1;
-    cards.push(<Results />);
-    while (cardNumbers <= count) {
-        cards.push(<CardSkeleton key={cardNumbers} />);
-        cardNumbers++;
+    let cardNumber = 1;
+    cards.push(<Results key={'containerLoader'} />);
+    while (cardNumber <= count) {
+        cards.push(<CardSkeleton key={cardNumber} />);
+        cardNumber++;
     }
     return (cards);
 };
 
 
-const Loader = ({ count = 0 }) => {
-    return (
-        <div className='centers' id='resultCenters' >
-            <ResultsContainer count={count} />
-        </div>
-    );
-};
+const Loader = ({ count = 0 }) => (<ResultsContainer count={count} />);
 
 export default Loader;
