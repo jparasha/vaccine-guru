@@ -3,12 +3,6 @@ import { Fragment, useEffect, useRef, useState } from 'react';
 import Tile from './Tile';
 import Loader from './Loader';
 
-const newTabIcon = text => (
-    <a className='link__new-tab' href='https://www.cowin.gov.in/home'>
-        {text}&nbsp;
-        <img className='link__new-tab-icon' src='/tab.png' alt='opens in new tab' />
-    </a>
-);
 
 const FilterRibbon = ({ centers, centerData, underFortyFive, setFilter, available, setAvailability, CONSTANTS }) => {
     return (
@@ -49,23 +43,22 @@ const Cards = ({ CONSTANTS, centerData, errors, sorting }) => {
             const _available_capacity = { 18: 0, 45: 0 }, _min_age_limit = [], _to = to.substr(0, 2);
             let _vaccine = '';
             sessions.forEach((session = {}) => {
-                const { available_capacity = '', min_age_limit = '', vaccine = '', date = '' } = session;
+                const { available_capacity = '', min_age_limit = '', vaccine = '' } = session;
                 min_age_limit && _min_age_limit.push(min_age_limit);
                 _available_capacity[min_age_limit] = _available_capacity[min_age_limit] += available_capacity;
                 _vaccine = _vaccine || vaccine;
             });
             return (
                 <div className='center' key={index}>
+                    <div className='center__title-tiles center__tiles'>
+                        <Tile data={`45+ : ${_available_capacity[45] ? (_available_capacity[45].toFixed()) : 'No'} slots`} bold transparent />
+                        <Tile data={`18+ : ${_available_capacity[18] ? (_available_capacity[18].toFixed()) : 'No'} slots`} bold transparent />
+                        <Tile data={(_available_capacity[45] || _available_capacity[18]) ? 'book' : ''} bold transparent button />
+
+                    </div>
                     <div className='center__title'>
-                        <h6 className='no-margin center__title-secondary'>{`${district_name}, ${state_name}`}</h6>
+                        <h6 className='no-margin center__title-secondary'>{`${district_name}, ${state_name}`}<hr /></h6>
                         <h5 className='no-margin center__title-primary'><strong>{name}</strong></h5>
-                        <span>slots this week: {(_available_capacity[45] || _available_capacity[18]) ? newTabIcon('book') : ''}</span>
-                        <h6 className='no-margin'>
-                            <strong>{`45+ : ${_available_capacity[45] ? (_available_capacity[45].toFixed()) : '0'}`}&nbsp;</strong>
-                        </h6>
-                        <h6 className='no-margin'>
-                            <strong>{`18+ : ${_available_capacity[18] ? (_available_capacity[18].toFixed()) : '0'}`}&nbsp;</strong>
-                        </h6>
                     </div>
                     <div className='center__tiles'>
                         <Tile data={`${_min_age_limit.includes(18) ? '18' : '45'} + `} />

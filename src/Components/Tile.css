@@ -11,3 +11,13 @@
     background: var(--blue);
     max-width: 75px;
 }
+
+.tile.transparent {
+    background: transparent;
+    border: 1px solid var(--blue);
+    color: var(--black);
+}
+
+.tile.bold {
+    font-weight: bold;
+}

@@ -21,6 +21,7 @@
     justify-content: center;
     background-color: #fff;
     margin: auto auto 4% auto;
+    border-left: 4px solid var(--blue);
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .25);
 }
 
@@ -37,11 +38,10 @@
     margin: 2% auto;
     justify-content: space-between;
     border-radius: 12px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, .1);
 }
 
 .results-container .result-count {
-    font-size: 1rem;
+    font-size: 1.2rem;
     box-shadow: none;
     font-weight: normal;
 }
@@ -72,6 +72,12 @@
 .center__title-primary {
     font-size: 1.4rem;
     font-weight: bolder;
+}
+
+.center__title-secondary hr {
+    border-bottom: 1px solid var(--blue);
+    width: 2rem;
+    margin-left: 0
 }
 
 .center__title-secondary {
@@ -135,6 +141,7 @@
         width: 100%;
         margin: 1% 5%;
         padding: 2% 15% 2% 5%;
+        border: none;
     }
 
     .card__age-limit {
@@ -153,6 +160,8 @@
 
     .results-container {
         margin: 4%;
+        box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .25);
+        /* box-shadow: 0 2px 15px rgba(0, 0, 0, .1); */
     }
 
     .results-container h2,
@@ -170,6 +179,6 @@
     }
 
     .results-container .result-count {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
