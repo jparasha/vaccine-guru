@@ -1,8 +1,18 @@
-import './results.css';
 import { Fragment, useEffect, useRef, useState } from 'react';
+import './results.css';
+import { manageEvents, isMobile } from '../utils';
 import Tile from './Tile';
 import Loader from './Loader';
+import Modal from './Modal';
 
+
+const handleRedirect = (event, isAvailable) => {
+    manageEvents(event);
+    const url = isAvailable ? 'https://www.cowin.gov.in/home' : '';
+    if (url) {
+        window.location.href = url;
+    }
+};
 
 const FilterRibbon = ({ centers, centerData, underFortyFive, setFilter, available, setAvailability, CONSTANTS }) => {
     return (
@@ -24,7 +34,65 @@ const FilterRibbon = ({ centers, centerData, underFortyFive, setFilter, availabl
     );
 };
 
-const Cards = ({ CONSTANTS, centerData, errors, sorting }) => {
+const Card = ({ index, district_name, state_name, name, _min_age_limit, _vaccine, _available_capacity, from, _to, sessions, fee_type, handleClose, updateModalData }) => {
+
+    const updateModal = e => {
+        updateModalData({
+            district_name,
+            state_name,
+            name,
+            _min_age_limit,
+            _vaccine,
+            _available_capacity,
+            from,
+            _to,
+            sessions,
+            fee_type
+        });
+        handleClose(e);
+    };
+
+
+    const isAvailable = (_available_capacity[45] || _available_capacity[18]);
+    return (
+        <div className='center' key={index}>
+            {/* <div className='center__title-tiles center__tiles'>
+                        <Tile data={`45+ : ${_available_capacity[45] ? (_available_capacity[45].toFixed()) : 'No'} slots`} bold transparent />
+                        <Tile data={`18+ : ${_available_capacity[18] ? (_available_capacity[18].toFixed()) : 'No'} slots`} bold transparent />
+                        <Tile data={(_available_capacity[45] || _available_capacity[18]) ? 'book' : ''} bold transparent button />
+
+                    </div> */}
+            <div className='center__title'>
+                <h6 className='no-margin center__title-secondary'>{`${district_name}, ${state_name}`}<hr /></h6>
+                <h5 className='no-margin center__title-primary'><strong>{name}</strong></h5>
+            </div>
+            <div className={'center__buttons'}>
+                <button className={`center__button transparent`} onClick={updateModal}>
+                    MORE DETAILS
+                </button>
+                <button className={`center__button ${(isAvailable) ? '' : 'un-available'}`} disabled={!isAvailable}>
+                    {isAvailable ? 'Book Now' : 'No Slots'}
+                </button>
+                {/*  <a href='#' onClick={(e, isAvailable) => handleRedirect(e, isAvailable)} className={`center__button transparent ${(isAvailable) ? 'available' : 'un-available'}`}>
+                    {isAvailable ? 'Book Now' : 'No Slots'}
+                </a>
+                <a href='#' role='button' className={'center__button'} onClick={updateModal}>MORE DETAILS</a> */}
+            </div>
+            {/* { visible && <div className='center__tiles'>
+                <Tile data={`${_min_age_limit.includes(18) ? '18' : '45'} + `} />
+                <Tile data={`${_vaccine}`} />
+                <Tile data={`${`${from.substr(0, 2)}AM - ${_to > 12 ? (_to - 12) : _to}PM`}`} />
+            </div>
+            } */}
+            <div className='card__age-limit'>
+                <div>{`${fee_type}`}</div>
+            </div>
+            <img className='card__image' src='/injection.svg' alt='vaccine' />
+        </div>
+    );
+};
+
+const Cards = ({ CONSTANTS, centerData, errors, sorting, handleClose, updateModalData }) => {
     if (errors) {
         return (
             <div className='center' >
@@ -49,27 +117,21 @@ const Cards = ({ CONSTANTS, centerData, errors, sorting }) => {
                 _vaccine = _vaccine || vaccine;
             });
             return (
-                <div className='center' key={index}>
-                    <div className='center__title-tiles center__tiles'>
-                        <Tile data={`45+ : ${_available_capacity[45] ? (_available_capacity[45].toFixed()) : 'No'} slots`} bold transparent />
-                        <Tile data={`18+ : ${_available_capacity[18] ? (_available_capacity[18].toFixed()) : 'No'} slots`} bold transparent />
-                        <Tile data={(_available_capacity[45] || _available_capacity[18]) ? 'book' : ''} bold transparent button />
-
-                    </div>
-                    <div className='center__title'>
-                        <h6 className='no-margin center__title-secondary'>{`${district_name}, ${state_name}`}<hr /></h6>
-                        <h5 className='no-margin center__title-primary'><strong>{name}</strong></h5>
-                    </div>
-                    <div className='center__tiles'>
-                        <Tile data={`${_min_age_limit.includes(18) ? '18' : '45'} + `} />
-                        <Tile data={`${_vaccine}`} />
-                        <Tile data={`${`${from.substr(0, 2)}AM - ${_to > 12 ? (_to - 12) : _to}PM`}`} />
-                    </div>
-                    <div className='card__age-limit'>
-                        <div>{`${fee_type}`}</div>
-                    </div>
-                    <img className='card__image' src='/injection.svg' alt='vaccine' />
-                </div>
+                <Card
+                    index={index}
+                    district_name={district_name}
+                    state_name={state_name}
+                    name={name}
+                    _min_age_limit={_min_age_limit}
+                    _vaccine={_vaccine}
+                    _available_capacity={_available_capacity}
+                    from={from}
+                    _to={_to}
+                    fee_type={fee_type}
+                    sessions={sessions}
+                    handleClose={handleClose}
+                    updateModalData={updateModalData}
+                />
             );
         });
 };
@@ -103,7 +165,16 @@ const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {}, l
     const [underFortyFive, setUnderFortyFive] = useState(false);
     const [available, setAvailable] = useState(false);
     const [sorting, setSorting] = useState(false);
+    const [visible, setVisible] = useState(false);
+    const [modalData, setModalData] = useState(null);
     const resultRef = useRef(null);
+
+    const updateVisible = e => {
+        manageEvents(e);
+        setVisible(!visible);
+    };
+
+    const updateModalData = data => setModalData(data);
 
     const setFilter = () => {
         !sorting && setSorting(true);
@@ -116,14 +187,12 @@ const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {}, l
 
     useEffect(() => {
         if (resultRef && resultRef.current && loader && !errors) {
-            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
             const options = { block: 'start', inline: 'nearest' };
             resultRef.current.scrollIntoView(isMobile ? options : { ...options, behavior: 'smooth' });
         }
     }, [resultRef, loader, errors]);
 
     const centerData = filteredCenters(underFortyFive, available, sorting, setSorting, centers);
-
     return (
         <Fragment>
             <div className={`centers ${(loader) ? 'loader-section' : ''}`} id='resultCenters' ref={resultRef}>
@@ -143,11 +212,21 @@ const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {}, l
                                     setAvailability={setAvailability}
                                     CONSTANTS={CONSTANTS} />
                             }
-                            <Cards CONSTANTS={CONSTANTS} centerData={centerData} errors={errors} sorting={sorting} />
+                            <Cards
+                                errors={errors}
+                                sorting={sorting}
+                                CONSTANTS={CONSTANTS}
+                                centerData={centerData}
+                                handleClose={updateVisible}
+                                updateModalData={updateModalData} />
                         </Fragment>
-
                 }
             </div>
+            <Modal
+                show={visible}
+                modalData={modalData}
+                handleClose={updateVisible}
+            />
         </Fragment>
     );
 };

@@ -1,0 +1,50 @@
+.modal-main {
+    position: fixed;
+    background: var(--white);
+    max-width: 50vw;
+    min-height: 50vh;
+    margin: 5% auto;
+    top: 0;
+    left: 50%;
+    z-index: 11;
+    padding: 2%;
+    border-radius: 12px;
+    transform: translate(-50%, -50%);
+}
+
+.modal-main .modal__box {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.modal__bottom button {
+    padding: 2% 5%;
+}
+
+
+.modal__body .body__card {
+    margin: 5% 2%;
+    display: flex;
+    min-width: 250px;
+    min-height: 300px;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 12px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .25);
+}
+
+.body__card-header.border-bottom {
+    border-color: #ddd;
+}
+
+ul:nth-child(1) {
+    padding: 0 !important;
+}
+
+.body__card-body-ul {
+    padding: 5%;
+}

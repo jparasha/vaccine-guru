@@ -2,9 +2,11 @@
 
 :root {
   --blue: #04AA6D;
+  --secondary-blue: #059862;
   --light-blue: #2867b2;
   --white: #fff;
   --black: #000;
+  --red: #cf2d2db0;
 }
 
 body {
@@ -38,6 +40,112 @@ body {
 
 .no-margin {
   margin: 0;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  height: 45px;
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--blue);
+  font-family: 'Quicksand', sans-serif;
+}
+
+.col {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-start {
+  justify-content: flex-start;
+}
+
+.content-around {
+  justify-content: space-around;
+}
+
+.content-between {
+  justify-content: space-between;
+}
+
+.content-even {
+  justify-content: space-evenly;
+}
+
+.content-end {
+  justify-content: flex-end;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-self-right {
+  align-self: flex-end;
+}
+
+.flex-row {
+  flex-flow: row wrap;
+}
+
+.flex-row-nowrap {
+  flex-flow: row nowrap;
+}
+
+.auto-overflow {
+  overflow: auto;
+  scrollbar-width: thin;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.width-90 {
+  width: 90%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.width-inherit {
+  width: inherit;
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--blue);
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+
+li {
+  list-style: none;
 }
 
 @media screen and (max-width: 768px) {

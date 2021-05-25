@@ -10,13 +10,13 @@
 
 .center {
     z-index: 1;
-    width: 300px;
+    width: 320px;
     display: flex;
     overflow: hidden;
     min-height: 200px;
     position: relative;
     border-radius: 12px;
-    padding: 2% 5% 2% 2%;
+    padding: 2% 2% 2% 2%;
     flex-direction: column;
     justify-content: center;
     background-color: #fff;
@@ -114,7 +114,7 @@
 .card__image {
     right: 0px;
     height: 30%;
-    bottom: 15px;
+    bottom: 40%;
     opacity: 0.1;
     position: absolute;
 }
@@ -129,6 +129,53 @@
     color: var(--blue);
 }
 
+.center .center__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center .center__button {
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+    width: calc(50% - 10px);
+    height: 65px;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--blue);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.center .center__button.transparent {
+    background-color: transparent;
+    color: var(--black);
+    border: 1px solid var(--blue);
+}
+
+.center .center__button:hover {
+    color: var(--white);
+    background-color: var(--secondary-blue);
+}
+
+.center__button.un-available {
+    background-color: var(--red);
+    border: 1px solid var(--red);
+    cursor: not-allowed;
+}
+
+
 @media screen and (max-width: 768px) {
     .centers {
         padding: 0;
@@ -139,8 +186,8 @@
 
     .center {
         width: 100%;
-        margin: 1% 5%;
-        padding: 2% 15% 2% 5%;
+        margin: 1% 4%;
+        padding: 2% 5% 2% 5%;
         border: none;
     }
 
