@@ -55,8 +55,9 @@ ul:nth-child(1) {
     padding: 0 10%;
 }
 
-.modal__header button {
+.modal__header button.transparent.danger {
     position: absolute;
     right: 0;
     top: 0;
+    border: 1px solid #ddd;
 }

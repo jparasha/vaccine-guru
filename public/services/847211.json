@@ -63,7 +63,7 @@
 				{
 					"session_id": "ff15b6a9-f587-4d26-a6d7-ca174c8b56d7",
 					"date": "26-05-2021",
-					"available_capacity": 180,
+					"available_capacity": 179,
 					"min_age_limit": 45,
 					"vaccine": "COVISHIELD",
 					"slots": [
@@ -72,7 +72,7 @@
 						"01:00PM-03:00PM",
 						"03:00PM-06:00PM"
 					],
-					"available_capacity_dose1": 100,
+					"available_capacity_dose1": 99,
 					"available_capacity_dose2": 80
 				}
 			]
@@ -117,83 +117,6 @@
 						"10:00AM-11:00AM",
 						"11:00AM-12:00PM",
 						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				}
-			]
-		},
-		{
-			"center_id": 261791,
-			"name": "LUD Z3 T1",
-			"address": "ZONE 3  LUDHIANA",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Ludhiana Local",
-			"pincode": 141010,
-			"lat": 30,
-			"long": 75,
-			"from": "09:00:00",
-			"to": "15:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "3d0bd077-c1f1-4a9e-86d5-03edd18244ef",
-					"date": "26-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				},
-				{
-					"session_id": "a4437a86-c682-48b8-85cc-f3d81797e821",
-					"date": "27-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				}
-			]
-		},
-		{
-			"center_id": 652094,
-			"name": "HWC ISSAPUR",
-			"address": "VILLAGE ISSAPUR TEHSIL SAMRALA",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Machiwara",
-			"pincode": 141115,
-			"lat": 30,
-			"long": 76,
-			"from": "09:00:00",
-			"to": "15:30:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "05cfe644-2182-40a3-9b50-5f08359d39e7",
-					"date": "26-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:30PM"
 					],
 					"available_capacity_dose1": 0,
 					"available_capacity_dose2": 0
@@ -247,165 +170,6 @@
 			]
 		},
 		{
-			"center_id": 565905,
-			"name": "Fortis Hospitals Ltd",
-			"address": "Fortis Hospitals Ltd",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Ludhiana Local",
-			"pincode": 141015,
-			"lat": 30,
-			"long": 75,
-			"from": "09:00:00",
-			"to": "17:00:00",
-			"fee_type": "Paid",
-			"sessions": [
-				{
-					"session_id": "0bd6d763-138b-4d1b-953e-4da56d53515d",
-					"date": "26-05-2021",
-					"available_capacity": 24,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					],
-					"available_capacity_dose1": 10,
-					"available_capacity_dose2": 14
-				},
-				{
-					"session_id": "a725e40b-c17b-43f9-8987-876efc022c65",
-					"date": "26-05-2021",
-					"available_capacity": 10,
-					"min_age_limit": 18,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 10
-				},
-				{
-					"session_id": "24916ff7-1764-4b28-9272-fd552a77733d",
-					"date": "27-05-2021",
-					"available_capacity": 10,
-					"min_age_limit": 18,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 10
-				},
-				{
-					"session_id": "77fe300d-6aad-4f56-8a92-7fc938d4585e",
-					"date": "27-05-2021",
-					"available_capacity": 36,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-05:00PM"
-					],
-					"available_capacity_dose1": 21,
-					"available_capacity_dose2": 15
-				}
-			],
-			"vaccine_fees": [
-				{
-					"vaccine": "COVISHIELD",
-					"fee": "850"
-				}
-			]
-		},
-		{
-			"center_id": 564043,
-			"name": "LUD Z4 T3",
-			"address": "ZONE 4 . LUDHIANA",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Ludhiana Local",
-			"pincode": 141002,
-			"lat": 30,
-			"long": 75,
-			"from": "09:00:00",
-			"to": "15:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "46418dd7-08a3-41bd-9d65-f71957b81b4b",
-					"date": "26-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				},
-				{
-					"session_id": "ba8ca087-6842-497e-989e-cd9cf8679fbd",
-					"date": "27-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				}
-			]
-		},
-		{
-			"center_id": 663913,
-			"name": "HWC Chachrari",
-			"address": "VPO Chachrari",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Hathur",
-			"pincode": 142026,
-			"lat": 31,
-			"long": 75,
-			"from": "09:00:00",
-			"to": "18:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "3d01adf7-18aa-49c2-9278-2db1990b11a6",
-					"date": "26-05-2021",
-					"available_capacity": 170,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-06:00PM"
-					],
-					"available_capacity_dose1": 100,
-					"available_capacity_dose2": 70
-				}
-			]
-		},
-		{
 			"center_id": 659205,
 			"name": "LUD Z1 T2",
 			"address": "ZONE 2 LUDHIANA",
@@ -436,52 +200,6 @@
 				},
 				{
 					"session_id": "ab403d43-d244-4f8f-ae6e-5316059de63a",
-					"date": "27-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				}
-			]
-		},
-		{
-			"center_id": 574570,
-			"name": "ESIC MODEL HOSPITAL",
-			"address": "ESIC MODEL HOSPITAL",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Ludhiana Local",
-			"pincode": 141001,
-			"lat": 30,
-			"long": 75,
-			"from": "09:00:00",
-			"to": "15:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "3281f695-88f9-455d-9ddc-30415062deb5",
-					"date": "26-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				},
-				{
-					"session_id": "df875744-a73d-4c80-8fa1-68c02243dd60",
 					"date": "27-05-2021",
 					"available_capacity": 0,
 					"min_age_limit": 45,
@@ -660,37 +378,6 @@
 						"10:00AM-11:00AM",
 						"11:00AM-12:00PM",
 						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				}
-			]
-		},
-		{
-			"center_id": 652336,
-			"name": "HWC PANJGRIAN",
-			"address": "VILLAGE PANJGRIAN",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Machiwara",
-			"pincode": 141115,
-			"lat": 31,
-			"long": 75,
-			"from": "09:00:00",
-			"to": "15:30:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "d2a719c4-cbd1-4881-8905-02953bd99242",
-					"date": "26-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:30PM"
 					],
 					"available_capacity_dose1": 0,
 					"available_capacity_dose2": 0
@@ -1328,7 +1015,7 @@
 				{
 					"session_id": "47c91496-b11f-4ff1-a9b0-111d01a242c6",
 					"date": "26-05-2021",
-					"available_capacity": 94,
+					"available_capacity": 92,
 					"min_age_limit": 45,
 					"vaccine": "COVISHIELD",
 					"slots": [
@@ -1337,7 +1024,7 @@
 						"01:00PM-03:00PM",
 						"03:00PM-06:00PM"
 					],
-					"available_capacity_dose1": 44,
+					"available_capacity_dose1": 42,
 					"available_capacity_dose2": 50
 				}
 			]
@@ -1373,52 +1060,6 @@
 				},
 				{
 					"session_id": "0514a831-077d-4a0d-9b9a-4b9ea0f69c8a",
-					"date": "27-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				}
-			]
-		},
-		{
-			"center_id": 631186,
-			"name": "UPHC MODEL TOWN KHANNA",
-			"address": "MODEL TOWN KHANNA",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Khanna",
-			"pincode": 141401,
-			"lat": 30,
-			"long": 76,
-			"from": "09:00:00",
-			"to": "15:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "ed864835-9034-4e94-8f16-0a5222289ca2",
-					"date": "26-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				},
-				{
-					"session_id": "1fb7aae5-0c7f-48e5-ba16-36ef9b80579b",
 					"date": "27-05-2021",
 					"available_capacity": 0,
 					"min_age_limit": 45,
@@ -1604,130 +1245,6 @@
 			]
 		},
 		{
-			"center_id": 654983,
-			"name": "HWC MADPUR",
-			"address": "VPO MADPUR",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Manupur",
-			"pincode": 141114,
-			"lat": 30,
-			"long": 76,
-			"from": "09:00:00",
-			"to": "15:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "2fd1356d-5b43-47f3-8ea2-e6eb625f2995",
-					"date": "26-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				}
-			]
-		},
-		{
-			"center_id": 654061,
-			"name": "HWC Deherka",
-			"address": "VPO Deherka",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Hathur",
-			"pincode": 142034,
-			"lat": 30,
-			"long": 75,
-			"from": "09:00:00",
-			"to": "18:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "390171bb-6d17-4f2e-addd-5281d45a88c9",
-					"date": "26-05-2021",
-					"available_capacity": 170,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-06:00PM"
-					],
-					"available_capacity_dose1": 100,
-					"available_capacity_dose2": 70
-				}
-			]
-		},
-		{
-			"center_id": 612009,
-			"name": "CHC Pakhowal",
-			"address": "VPO Pakhowal",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Pakhowal",
-			"pincode": 141108,
-			"lat": 30,
-			"long": 75,
-			"from": "09:00:00",
-			"to": "15:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "bddf6427-bf88-4a60-beaf-c4274dda4c74",
-					"date": "26-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				}
-			]
-		},
-		{
-			"center_id": 344382,
-			"name": "PHC Chowkiman",
-			"address": "VPO Chowkiman",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Hathur",
-			"pincode": 142023,
-			"lat": 30,
-			"long": 75,
-			"from": "09:00:00",
-			"to": "18:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "d13dd330-2460-469f-8203-61a0b8bbd1bd",
-					"date": "26-05-2021",
-					"available_capacity": 150,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-06:00PM"
-					],
-					"available_capacity_dose1": 100,
-					"available_capacity_dose2": 50
-				}
-			]
-		},
-		{
 			"center_id": 632191,
 			"name": "LUD Z8 T2",
 			"address": "Zone 8 Ludhiana",
@@ -1798,66 +1315,6 @@
 						"10:00AM-11:00AM",
 						"11:00AM-12:00PM",
 						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				}
-			]
-		},
-		{
-			"center_id": 653995,
-			"name": "HWC Kular",
-			"address": "VPO Kular",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Hathur",
-			"pincode": 142023,
-			"lat": 31,
-			"long": 75,
-			"from": "09:00:00",
-			"to": "18:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "31f18d47-a502-4a2d-a84a-42627db8f3bd",
-					"date": "26-05-2021",
-					"available_capacity": 180,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-06:00PM"
-					],
-					"available_capacity_dose1": 100,
-					"available_capacity_dose2": 80
-				}
-			]
-		},
-		{
-			"center_id": 653638,
-			"name": "MACHHIWARA MOBILE",
-			"address": "NEAR GANI KHAN NABI KHAN GATE",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Machiwara",
-			"pincode": 141115,
-			"lat": 0,
-			"long": 2,
-			"from": "12:00:00",
-			"to": "15:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "45ffedcd-a6c2-47bf-ae9c-cf65ccb7b7ea",
-					"date": "26-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"12:00PM-02:00PM",
-						"02:00PM-03:00PM"
 					],
 					"available_capacity_dose1": 0,
 					"available_capacity_dose2": 0
@@ -1988,68 +1445,6 @@
 				{
 					"session_id": "0ee92d50-9464-453b-a7c1-7ba7d5447f5f",
 					"date": "27-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				}
-			]
-		},
-		{
-			"center_id": 651844,
-			"name": "S/c Phallewal",
-			"address": "Vpo Phallewal",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Pakhowal",
-			"pincode": 141203,
-			"lat": 30,
-			"long": 75,
-			"from": "09:00:00",
-			"to": "15:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "839eb353-d83f-47ae-a569-8fb79c0487fb",
-					"date": "26-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				}
-			]
-		},
-		{
-			"center_id": 650651,
-			"name": "S/C PHULLANWAL",
-			"address": "VPO PHULLANWAL",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Pakhowal",
-			"pincode": 141013,
-			"lat": 30,
-			"long": 75,
-			"from": "09:00:00",
-			"to": "15:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "874f2acb-4af3-4413-a212-724ed2b21e98",
-					"date": "26-05-2021",
 					"available_capacity": 0,
 					"min_age_limit": 45,
 					"vaccine": "COVISHIELD",
@@ -2234,99 +1629,6 @@
 			]
 		},
 		{
-			"center_id": 653156,
-			"name": "HWC RAJEWAL",
-			"address": "VPO RAJEWALSAMRALA",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Manupur",
-			"pincode": 141114,
-			"lat": 30,
-			"long": 76,
-			"from": "09:00:00",
-			"to": "15:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "709121f4-16c6-474d-9443-72d9c0774de5",
-					"date": "26-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				}
-			]
-		},
-		{
-			"center_id": 653851,
-			"name": "TARF GEHLEWAL HCW",
-			"address": "TARF GEHLEWAL HCW",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Koomkalan",
-			"pincode": 141007,
-			"lat": 30,
-			"long": 76,
-			"from": "09:00:00",
-			"to": "18:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "3423d5cf-e821-4f9a-8a18-ddc6d6910624",
-					"date": "26-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-06:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				}
-			]
-		},
-		{
-			"center_id": 611982,
-			"name": "CHC Payal",
-			"address": "VPO Payal",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Payal",
-			"pincode": 141416,
-			"lat": 30,
-			"long": 76,
-			"from": "09:00:00",
-			"to": "18:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "839360a7-0d40-4a00-9e95-7d92679cc3b0",
-					"date": "26-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-06:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				}
-			]
-		},
-		{
 			"center_id": 612051,
 			"name": "SDH Raikot",
 			"address": "VPO Raikot",
@@ -2357,52 +1659,6 @@
 				},
 				{
 					"session_id": "ca1344bc-5981-4c18-a8f8-be8be91cb068",
-					"date": "27-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				}
-			]
-		},
-		{
-			"center_id": 631194,
-			"name": "UPHC LADY HOSPITAL KHANNA",
-			"address": "KHANNA",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Khanna",
-			"pincode": 141401,
-			"lat": 30,
-			"long": 76,
-			"from": "09:00:00",
-			"to": "15:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "747deed7-6f9f-49c0-a4fa-2cebe929f763",
-					"date": "26-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				},
-				{
-					"session_id": "6cbb39c5-4bb1-4f4a-be6f-375653200385",
 					"date": "27-05-2021",
 					"available_capacity": 0,
 					"min_age_limit": 45,
@@ -2538,197 +1794,6 @@
 					],
 					"available_capacity_dose1": 0,
 					"available_capacity_dose2": 0
-				}
-			]
-		},
-		{
-			"center_id": 270407,
-			"name": "CHC MACHIWARA",
-			"address": "MACHHIWARA",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Machiwara",
-			"pincode": 141115,
-			"lat": 30,
-			"long": 76,
-			"from": "09:00:00",
-			"to": "15:30:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "b675bac5-8ff9-417a-8f63-88100e627c92",
-					"date": "26-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:30PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				}
-			]
-		},
-		{
-			"center_id": 653746,
-			"name": "AYALI KHURD HCW",
-			"address": "AYALI KHURD",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Koomkalan",
-			"pincode": 142027,
-			"lat": 30,
-			"long": 75,
-			"from": "09:00:00",
-			"to": "18:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "82f2511d-9c1f-4e93-a065-49eb9dff7914",
-					"date": "26-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-06:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				}
-			]
-		},
-		{
-			"center_id": 261811,
-			"name": "Ludhiana CH COVAXIN",
-			"address": "Ludhiana CH",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Ludhiana Local",
-			"pincode": 141002,
-			"lat": 30,
-			"long": 75,
-			"from": "09:00:00",
-			"to": "15:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "7adf59b7-533f-4e82-aa27-e31c1f223e87",
-					"date": "26-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				},
-				{
-					"session_id": "9bdc4ccd-db90-45b8-9e9f-b09fa83072d8",
-					"date": "27-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVAXIN",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				}
-			]
-		},
-		{
-			"center_id": 654002,
-			"name": "HWC Sidhwan Khurd",
-			"address": "VPO Sidhwan Khurd",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Hathur",
-			"pincode": 142024,
-			"lat": 30,
-			"long": 75,
-			"from": "09:00:00",
-			"to": "18:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "75fcb2fd-b09a-4d1b-8bf1-8b1026b5988c",
-					"date": "26-05-2021",
-					"available_capacity": 150,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-11:00AM",
-						"11:00AM-01:00PM",
-						"01:00PM-03:00PM",
-						"03:00PM-06:00PM"
-					],
-					"available_capacity_dose1": 100,
-					"available_capacity_dose2": 50
-				}
-			]
-		},
-		{
-			"center_id": 569729,
-			"name": "Oswal Hospital",
-			"address": "Oswal Hospital",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Ludhiana Local",
-			"pincode": 141010,
-			"lat": 30,
-			"long": 75,
-			"from": "10:00:00",
-			"to": "16:00:00",
-			"fee_type": "Paid",
-			"sessions": [
-				{
-					"session_id": "c273e741-f567-4fec-a97f-f5e0b344b03e",
-					"date": "26-05-2021",
-					"available_capacity": 136,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-01:00PM",
-						"01:00PM-04:00PM"
-					],
-					"available_capacity_dose1": 86,
-					"available_capacity_dose2": 50
-				},
-				{
-					"session_id": "188b5699-e95a-48c5-9590-86c55704bfd0",
-					"date": "26-05-2021",
-					"available_capacity": 49,
-					"min_age_limit": 18,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-01:00PM",
-						"01:00PM-04:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 49
-				}
-			],
-			"vaccine_fees": [
-				{
-					"vaccine": "COVISHIELD",
-					"fee": "850"
 				}
 			]
 		},
@@ -2933,52 +1998,6 @@
 			]
 		},
 		{
-			"center_id": 568295,
-			"name": "Sdh Samrala",
-			"address": "Sdh Samrala",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Samrala",
-			"pincode": 141114,
-			"lat": 30,
-			"long": 76,
-			"from": "09:00:00",
-			"to": "15:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "4e15262b-b52c-4a42-a624-5f82d84cdaaa",
-					"date": "26-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				},
-				{
-					"session_id": "bca31c33-dcee-49a4-981c-0d95cb070a4e",
-					"date": "27-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				}
-			]
-		},
-		{
 			"center_id": 337501,
 			"name": "PHC SAWADI KALAN",
 			"address": "SAWADI KALAN",
@@ -3037,37 +2056,6 @@
 					],
 					"available_capacity_dose1": 100,
 					"available_capacity_dose2": 80
-				}
-			]
-		},
-		{
-			"center_id": 650860,
-			"name": "MANGLI UCHI",
-			"address": "VPO MANGLI UCHI",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Sanehwal",
-			"pincode": 141122,
-			"lat": 30,
-			"long": 75,
-			"from": "09:00:00",
-			"to": "15:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "0a41e375-1e88-450a-8564-8566cd8b5cfd",
-					"date": "26-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
 				}
 			]
 		},
@@ -3303,37 +2291,6 @@
 			]
 		},
 		{
-			"center_id": 654987,
-			"name": "HWC LIBRA",
-			"address": "VPO LIBRA",
-			"state_name": "Punjab",
-			"district_name": "Ludhiana",
-			"block_name": "Manupur",
-			"pincode": 141401,
-			"lat": 30,
-			"long": 76,
-			"from": "09:00:00",
-			"to": "15:00:00",
-			"fee_type": "Free",
-			"sessions": [
-				{
-					"session_id": "e07c79ef-957d-4e55-bce4-09e4d8300e1c",
-					"date": "26-05-2021",
-					"available_capacity": 0,
-					"min_age_limit": 45,
-					"vaccine": "COVISHIELD",
-					"slots": [
-						"09:00AM-10:00AM",
-						"10:00AM-11:00AM",
-						"11:00AM-12:00PM",
-						"12:00PM-03:00PM"
-					],
-					"available_capacity_dose1": 0,
-					"available_capacity_dose2": 0
-				}
-			]
-		},
-		{
 			"center_id": 686391,
 			"name": "Sabzi Mandi Covaxin",
 			"address": "Sabzi Mandi LUDHIANA",
@@ -3353,6 +2310,182 @@
 					"available_capacity": 0,
 					"min_age_limit": 45,
 					"vaccine": "COVAXIN",
+					"slots": [
+						"09:00AM-10:00AM",
+						"10:00AM-11:00AM",
+						"11:00AM-12:00PM",
+						"12:00PM-03:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 565905,
+			"name": "Fortis Hospitals Ltd",
+			"address": "Fortis Hospitals Ltd",
+			"state_name": "Punjab",
+			"district_name": "Ludhiana",
+			"block_name": "Ludhiana Local",
+			"pincode": 141015,
+			"lat": 30,
+			"long": 75,
+			"from": "09:00:00",
+			"to": "17:00:00",
+			"fee_type": "Paid",
+			"sessions": [
+				{
+					"session_id": "24916ff7-1764-4b28-9272-fd552a77733d",
+					"date": "27-05-2021",
+					"available_capacity": 10,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-05:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 10
+				},
+				{
+					"session_id": "77fe300d-6aad-4f56-8a92-7fc938d4585e",
+					"date": "27-05-2021",
+					"available_capacity": 22,
+					"min_age_limit": 45,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-05:00PM"
+					],
+					"available_capacity_dose1": 7,
+					"available_capacity_dose2": 15
+				}
+			],
+			"vaccine_fees": [
+				{
+					"vaccine": "COVISHIELD",
+					"fee": "850"
+				}
+			]
+		},
+		{
+			"center_id": 270407,
+			"name": "CHC MACHIWARA",
+			"address": "MACHHIWARA",
+			"state_name": "Punjab",
+			"district_name": "Ludhiana",
+			"block_name": "Machiwara",
+			"pincode": 141115,
+			"lat": 30,
+			"long": 76,
+			"from": "09:00:00",
+			"to": "15:30:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "671a7089-3c05-4a74-b625-a8124e776771",
+					"date": "27-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 45,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-10:00AM",
+						"10:00AM-11:00AM",
+						"11:00AM-12:00PM",
+						"12:00PM-03:30PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 653166,
+			"name": "HWC MANKI",
+			"address": "VPO MANKI TEH SAMRALA",
+			"state_name": "Punjab",
+			"district_name": "Ludhiana",
+			"block_name": "Manupur",
+			"pincode": 141114,
+			"lat": 30,
+			"long": 76,
+			"from": "09:00:00",
+			"to": "15:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "be233aa7-8317-427f-9f6d-4ef2ec64a46a",
+					"date": "27-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 45,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-10:00AM",
+						"10:00AM-11:00AM",
+						"11:00AM-12:00PM",
+						"12:00PM-03:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 261791,
+			"name": "LUD Z3 T1",
+			"address": "ZONE 3  LUDHIANA",
+			"state_name": "Punjab",
+			"district_name": "Ludhiana",
+			"block_name": "Ludhiana Local",
+			"pincode": 141010,
+			"lat": 30,
+			"long": 75,
+			"from": "09:00:00",
+			"to": "15:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "a4437a86-c682-48b8-85cc-f3d81797e821",
+					"date": "27-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 45,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-10:00AM",
+						"10:00AM-11:00AM",
+						"11:00AM-12:00PM",
+						"12:00PM-03:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 574570,
+			"name": "ESIC MODEL HOSPITAL",
+			"address": "ESIC MODEL HOSPITAL",
+			"state_name": "Punjab",
+			"district_name": "Ludhiana",
+			"block_name": "Ludhiana Local",
+			"pincode": 141001,
+			"lat": 30,
+			"long": 75,
+			"from": "09:00:00",
+			"to": "15:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "df875744-a73d-4c80-8fa1-68c02243dd60",
+					"date": "27-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 45,
+					"vaccine": "COVISHIELD",
 					"slots": [
 						"09:00AM-10:00AM",
 						"10:00AM-11:00AM",
@@ -3396,6 +2529,151 @@
 			]
 		},
 		{
+			"center_id": 564043,
+			"name": "LUD Z4 T3",
+			"address": "ZONE 4 . LUDHIANA",
+			"state_name": "Punjab",
+			"district_name": "Ludhiana",
+			"block_name": "Ludhiana Local",
+			"pincode": 141002,
+			"lat": 30,
+			"long": 75,
+			"from": "09:00:00",
+			"to": "15:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "ba8ca087-6842-497e-989e-cd9cf8679fbd",
+					"date": "27-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 45,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-10:00AM",
+						"10:00AM-11:00AM",
+						"11:00AM-12:00PM",
+						"12:00PM-03:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 261811,
+			"name": "Ludhiana CH COVAXIN",
+			"address": "Ludhiana CH",
+			"state_name": "Punjab",
+			"district_name": "Ludhiana",
+			"block_name": "Ludhiana Local",
+			"pincode": 141002,
+			"lat": 30,
+			"long": 75,
+			"from": "09:00:00",
+			"to": "15:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "9bdc4ccd-db90-45b8-9e9f-b09fa83072d8",
+					"date": "27-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 45,
+					"vaccine": "COVAXIN",
+					"slots": [
+						"09:00AM-10:00AM",
+						"10:00AM-11:00AM",
+						"11:00AM-12:00PM",
+						"12:00PM-03:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 569729,
+			"name": "Oswal Hospital",
+			"address": "Oswal Hospital",
+			"state_name": "Punjab",
+			"district_name": "Ludhiana",
+			"block_name": "Ludhiana Local",
+			"pincode": 141010,
+			"lat": 30,
+			"long": 75,
+			"from": "09:00:00",
+			"to": "18:00:00",
+			"fee_type": "Paid",
+			"sessions": [
+				{
+					"session_id": "df439563-c91e-493c-9f15-949a258bd5ab",
+					"date": "27-05-2021",
+					"available_capacity": 247,
+					"min_age_limit": 18,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-11:00AM",
+						"11:00AM-01:00PM",
+						"01:00PM-03:00PM",
+						"03:00PM-06:00PM"
+					],
+					"available_capacity_dose1": 197,
+					"available_capacity_dose2": 50
+				},
+				{
+					"session_id": "a0b29828-4edb-4f2e-a881-a1438ecb1080",
+					"date": "27-05-2021",
+					"available_capacity": 147,
+					"min_age_limit": 45,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"10:00AM-11:00AM",
+						"11:00AM-12:00PM",
+						"12:00PM-01:00PM",
+						"01:00PM-04:00PM"
+					],
+					"available_capacity_dose1": 97,
+					"available_capacity_dose2": 50
+				}
+			],
+			"vaccine_fees": [
+				{
+					"vaccine": "COVISHIELD",
+					"fee": "850"
+				}
+			]
+		},
+		{
+			"center_id": 631194,
+			"name": "UPHC LADY HOSPITAL KHANNA",
+			"address": "KHANNA",
+			"state_name": "Punjab",
+			"district_name": "Ludhiana",
+			"block_name": "Khanna",
+			"pincode": 141401,
+			"lat": 30,
+			"long": 76,
+			"from": "09:00:00",
+			"to": "15:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "6cbb39c5-4bb1-4f4a-be6f-375653200385",
+					"date": "27-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 45,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-10:00AM",
+						"10:00AM-11:00AM",
+						"11:00AM-12:00PM",
+						"12:00PM-03:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
 			"center_id": 596975,
 			"name": "Police Lines",
 			"address": "Police Lines",
@@ -3411,6 +2689,68 @@
 			"sessions": [
 				{
 					"session_id": "e1f00746-0ccc-4962-9fb6-25f31361270d",
+					"date": "27-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 45,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-10:00AM",
+						"10:00AM-11:00AM",
+						"11:00AM-12:00PM",
+						"12:00PM-03:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 631186,
+			"name": "UPHC MODEL TOWN KHANNA",
+			"address": "MODEL TOWN KHANNA",
+			"state_name": "Punjab",
+			"district_name": "Ludhiana",
+			"block_name": "Khanna",
+			"pincode": 141401,
+			"lat": 30,
+			"long": 76,
+			"from": "09:00:00",
+			"to": "15:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "1fb7aae5-0c7f-48e5-ba16-36ef9b80579b",
+					"date": "27-05-2021",
+					"available_capacity": 0,
+					"min_age_limit": 45,
+					"vaccine": "COVISHIELD",
+					"slots": [
+						"09:00AM-10:00AM",
+						"10:00AM-11:00AM",
+						"11:00AM-12:00PM",
+						"12:00PM-03:00PM"
+					],
+					"available_capacity_dose1": 0,
+					"available_capacity_dose2": 0
+				}
+			]
+		},
+		{
+			"center_id": 568295,
+			"name": "Sdh Samrala",
+			"address": "Sdh Samrala",
+			"state_name": "Punjab",
+			"district_name": "Ludhiana",
+			"block_name": "Samrala",
+			"pincode": 141114,
+			"lat": 30,
+			"long": 76,
+			"from": "09:00:00",
+			"to": "15:00:00",
+			"fee_type": "Free",
+			"sessions": [
+				{
+					"session_id": "bca31c33-dcee-49a4-981c-0d95cb070a4e",
 					"date": "27-05-2021",
 					"available_capacity": 0,
 					"min_age_limit": 45,

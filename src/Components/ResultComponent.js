@@ -2,6 +2,7 @@ import { Fragment, useEffect, useRef, useState } from 'react';
 import './results.css';
 import { manageEvents, isMobile } from '../utils';
 import Loader from './Loader';
+import Tile from './Tile';
 import Modal from './Modal';
 
 
@@ -36,6 +37,7 @@ const FilterRibbon = ({ centers, centerData, underFortyFive, setFilter, availabl
 const Card = ({ index, district_name, state_name, name, _min_age_limit, _vaccine, _available_capacity, from, _to, sessions, fee_type, handleClose, updateModalData }) => {
 
     const updateModal = e => {
+        manageEvents(e);
         updateModalData({
             district_name,
             state_name,
@@ -55,7 +57,7 @@ const Card = ({ index, district_name, state_name, name, _min_age_limit, _vaccine
     return (
         <div className='center' key={index}>
             <div className='center__title'>
-                <h6 className={'min-font-size no-margin-bottom'}>{_min_age_limit.includes(18) ? '18+ | ' : '45+ | '}{_vaccine.join(' | ').toUpperCase()}</h6>
+                <Tile transparent data={`${_min_age_limit.includes(18) ? '18' : '45'}+${_vaccine.join(' | ').toUpperCase()}`} />
                 <h6 className='no-margin center__title-secondary'>{`${district_name}, ${state_name}`}<hr /></h6>
                 <h5 className='no-margin center__title-primary'><strong>{name}</strong></h5>
             </div>
@@ -70,7 +72,7 @@ const Card = ({ index, district_name, state_name, name, _min_age_limit, _vaccine
                     {isAvailable ? 'Book Now' : 'No Slots'}
                 </button>
             </div>
-            <div className='card__age-limit'>
+            <div className='card__fee-type'>
                 <div>{`${fee_type}`}</div>
             </div>
             <img className='card__image' src='/injection.svg' alt='vaccine' />
@@ -158,6 +160,7 @@ const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {}, l
     const resultRef = useRef(null);
 
     const updateVisible = e => {
+        document.body.style.overflow = 'auto';
         manageEvents(e);
         setVisible(!visible);
     };

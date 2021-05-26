@@ -18,7 +18,7 @@ const ModalComponent = ({ show, handleClose, modalData, handleRedirect }) => {
             marginRight: '-50%',
             borderRadius: '12px',
             transform: 'translate(-50%, -50%)',
-            minWidth: isMobile ? '80vw' : '50vw',
+            minWidth: isMobile ? '80vw' : '42vw',
             maxWidth: isMobile ? '85vw' : '60vw',
             minHeight: isMobile ? '65vh' : '70vh'
         }
@@ -27,6 +27,9 @@ const ModalComponent = ({ show, handleClose, modalData, handleRedirect }) => {
     return (
         <div style={{ zIndex: 1000 }}>
             <Modal
+                onAfterOpen={() => {
+                    document.body.style.overflow = 'hidden';
+                }}
                 isOpen={show}
                 onRequestClose={handleClose}
                 contentLabel="Example Modal"

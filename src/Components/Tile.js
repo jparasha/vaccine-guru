@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import './Tile.css';
 
 const newTabIcon = text => (
@@ -11,7 +12,23 @@ const getTruncatedText = (text, transparent) => ((!transparent && text.length > 
 
 const getButton = text => (newTabIcon(text));
 
-const Tile = ({ data, transparent, bold, button }) => {
+const getText = (text, marked) => {
+    if (marked) {
+        const initial = text.substr(0, 3);
+        const rest = text.substr(3);
+        return (
+            <Fragment>
+                <span className={'mark content'}>{initial}</span>
+                <span className={'content'}>{rest}</span>
+            </Fragment>
+        );
+    }
+    else {
+        return (<span className={'content'}>{text}</span>);
+    }
+};
+
+const Tile = ({ data, transparent, bold, button, marked = true }) => {
     if (!data) {
         return null;
     }
@@ -20,10 +37,10 @@ const Tile = ({ data, transparent, bold, button }) => {
             {button ?
                 getButton(data)
                 :
-                getTruncatedText(data, transparent)
+                getText(getTruncatedText(data, transparent), marked)
             }
 
-        </span>
+        </span >
     );
 };
 
