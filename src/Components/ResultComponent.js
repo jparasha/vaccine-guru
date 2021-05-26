@@ -130,12 +130,14 @@ const filteredCenters = (underFortyFive, available, sorting, setSorting, centers
     const filtered = centers.filter((center = {}) => {
         let isMatching = false;
         let sessionsAvailability = 0;
+        let hasEighteenPlus = false;
         center.sessions.forEach((session = {}) => {
             sessionsAvailability += (session.available_capacity);
+            hasEighteenPlus = hasEighteenPlus || session.min_age_limit === 18;
             if (underFortyFive && available) {
-                isMatching = session.min_age_limit === 18 && sessionsAvailability > 0;
+                isMatching = hasEighteenPlus && sessionsAvailability > 0;
             } else if (underFortyFive) {
-                isMatching = isMatching ? isMatching : session.min_age_limit === 18;
+                isMatching = isMatching ? isMatching : hasEighteenPlus;
             } else {
                 isMatching = sessionsAvailability > 0;
             }
