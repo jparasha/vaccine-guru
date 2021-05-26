@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
 
 :root {
-  --blue: #2867b2;
+  --blue: #04AA6D;
+  --secondary-blue: #059862;
+  --light-blue: #2867b2;
   --white: #fff;
+  --black: #000;
+  --red: #cf2d2db0;
 }
 
 body {
   height: 100%;
   background: #fff;
   color: #000;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 
 }
 
@@ -36,6 +40,146 @@ body {
 
 .no-margin {
   margin: 0;
+}
+
+.no-margin-top {
+  margin-top: 0;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  height: 45px;
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--blue);
+  font-family: 'Quicksand', sans-serif;
+}
+
+button.transparent {
+  background-color: transparent;
+  color: var(--black);
+  border: 1px solid var(--blue);
+}
+
+button.transparent.danger {
+  background-color: transparent;
+  color: var(--black);
+  border: 1px solid var(--red);
+}
+
+button.transparent.danger:hover {
+  background-color: var(--red);
+  color: var(--white);
+  border: 1px solid var(--red);
+}
+
+.col {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-start {
+  justify-content: flex-start;
+}
+
+.content-around {
+  justify-content: space-around;
+}
+
+.content-between {
+  justify-content: space-between;
+}
+
+.content-even {
+  justify-content: space-evenly;
+}
+
+.content-center {
+  justify-content: center;
+}
+
+.content-end {
+  justify-content: flex-end;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-self-right {
+  align-self: flex-end;
+}
+
+.flex-row {
+  flex-flow: row wrap;
+}
+
+.flex-row-nowrap {
+  flex-flow: row nowrap;
+}
+
+.auto-overflow {
+  overflow: auto;
+  scrollbar-width: thin;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.width-90 {
+  width: 90%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.width-inherit {
+  width: inherit;
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--blue);
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+
+li {
+  list-style: none;
+}
+
+.min-font-size {
+  font-size: 0.6rem;
 }
 
 @media screen and (max-width: 768px) {

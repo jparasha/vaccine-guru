@@ -46,3 +46,4 @@ export const getUserZip = (REACT_APP_IP_URL, REACT_APP_ZIP_URL, isProduction) =>
     });
 };
 
+export const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);

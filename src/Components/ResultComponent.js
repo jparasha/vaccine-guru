@@ -1,14 +1,18 @@
-import './results.css';
 import { Fragment, useEffect, useRef, useState } from 'react';
-import Tile from './Tile';
+import './results.css';
+import { manageEvents, isMobile } from '../utils';
 import Loader from './Loader';
+import Tile from './Tile';
+import Modal from './Modal';
 
-const newTabIcon = text => (
-    <a className='link__new-tab' href='https://www.cowin.gov.in/home'>
-        {text}&nbsp;
-        <img className='link__new-tab-icon' src='/tab.png' alt='opens in new tab' />
-    </a>
-);
+
+const handleRedirect = (event, isAvailable) => {
+    manageEvents(event);
+    const url = isAvailable ? 'https://www.cowin.gov.in/home' : '';
+    if (url) {
+        window.open(url, '_blank');
+    }
+};
 
 const FilterRibbon = ({ centers, centerData, underFortyFive, setFilter, available, setAvailability, CONSTANTS }) => {
     return (
@@ -30,7 +34,53 @@ const FilterRibbon = ({ centers, centerData, underFortyFive, setFilter, availabl
     );
 };
 
-const Cards = ({ CONSTANTS, centerData, errors, sorting }) => {
+const Card = ({ index, district_name, state_name, name, _min_age_limit, _vaccine, _available_capacity, from, _to, sessions, fee_type, handleClose, updateModalData }) => {
+
+    const updateModal = e => {
+        manageEvents(e);
+        updateModalData({
+            district_name,
+            state_name,
+            name,
+            _min_age_limit,
+            _vaccine,
+            _available_capacity,
+            from,
+            _to,
+            sessions,
+            fee_type
+        });
+        handleClose(e);
+    };
+
+    const isAvailable = (_available_capacity[45] || _available_capacity[18]);
+    return (
+        <div className='center' key={index}>
+            <div className='center__title'>
+                <Tile transparent data={`${_min_age_limit.includes(18) ? '18' : '45'}+${_vaccine.join(' | ').toUpperCase()}`} />
+                <h5 className='no-margin center__title-primary'><strong>{name}</strong><hr /></h5>
+                <h6 className='no-margin center__title-secondary'>{`${district_name}, ${state_name}`}</h6>
+            </div>
+            <div className={'center__buttons'}>
+                <button className={`center__button transparent`} onClick={updateModal}>
+                    MORE DETAILS
+                </button>
+                <button
+                    onClick={e => (handleRedirect(e, isAvailable))}
+                    className={`center__button ${(isAvailable) ? '' : 'un-available'}`}
+                    disabled={!isAvailable}>
+                    {isAvailable ? 'Book Now' : 'No Slots'}
+                </button>
+            </div>
+            <div className='card__fee-type'>
+                <div>{`${fee_type}`}</div>
+            </div>
+            <img className='card__image' src='/injection.svg' alt='vaccine' />
+        </div>
+    );
+};
+
+const Cards = ({ CONSTANTS, centerData, errors, sorting, handleClose, updateModalData }) => {
     if (errors) {
         return (
             <div className='center' >
@@ -47,36 +97,29 @@ const Cards = ({ CONSTANTS, centerData, errors, sorting }) => {
         (center = {}, index = '') => {
             const { district_name = '', name = '', state_name = '', fee_type = '', from = '', to = '', sessions = [] } = center;
             const _available_capacity = { 18: 0, 45: 0 }, _min_age_limit = [], _to = to.substr(0, 2);
-            let _vaccine = '';
+            const _vaccine = [];
             sessions.forEach((session = {}) => {
-                const { available_capacity = '', min_age_limit = '', vaccine = '', date = '' } = session;
+                const { available_capacity = '', min_age_limit = '', vaccine = '' } = session;
                 min_age_limit && _min_age_limit.push(min_age_limit);
                 _available_capacity[min_age_limit] = _available_capacity[min_age_limit] += available_capacity;
-                _vaccine = _vaccine || vaccine;
+                ((!_vaccine.includes(vaccine)) && _vaccine.push(vaccine));
             });
             return (
-                <div className='center' key={index}>
-                    <div className='center__title'>
-                        <h6 className='no-margin center__title-secondary'>{`${district_name}, ${state_name}`}</h6>
-                        <h5 className='no-margin center__title-primary'><strong>{name}</strong></h5>
-                        <span>slots this week: {(_available_capacity[45] || _available_capacity[18]) ? newTabIcon('book') : ''}</span>
-                        <h6 className='no-margin'>
-                            <strong>{`45+ : ${_available_capacity[45] ? (_available_capacity[45].toFixed()) : '0'}`}&nbsp;</strong>
-                        </h6>
-                        <h6 className='no-margin'>
-                            <strong>{`18+ : ${_available_capacity[18] ? (_available_capacity[18].toFixed()) : '0'}`}&nbsp;</strong>
-                        </h6>
-                    </div>
-                    <div className='center__tiles'>
-                        <Tile data={`${_min_age_limit.includes(18) ? '18' : '45'} + `} />
-                        <Tile data={`${_vaccine}`} />
-                        <Tile data={`${`${from.substr(0, 2)}AM - ${_to > 12 ? (_to - 12) : _to}PM`}`} />
-                    </div>
-                    <div className='card__age-limit'>
-                        <div>{`${fee_type}`}</div>
-                    </div>
-                    <img className='card__image' src='/injection.svg' alt='vaccine' />
-                </div>
+                <Card
+                    index={index}
+                    district_name={district_name}
+                    state_name={state_name}
+                    name={name}
+                    _min_age_limit={_min_age_limit}
+                    _vaccine={_vaccine}
+                    _available_capacity={_available_capacity}
+                    from={from}
+                    _to={_to}
+                    fee_type={fee_type}
+                    sessions={sessions}
+                    handleClose={handleClose}
+                    updateModalData={updateModalData}
+                />
             );
         });
 };
@@ -89,12 +132,14 @@ const filteredCenters = (underFortyFive, available, sorting, setSorting, centers
     const filtered = centers.filter((center = {}) => {
         let isMatching = false;
         let sessionsAvailability = 0;
+        let hasEighteenPlus = false;
         center.sessions.forEach((session = {}) => {
             sessionsAvailability += (session.available_capacity);
+            hasEighteenPlus = hasEighteenPlus || session.min_age_limit === 18;
             if (underFortyFive && available) {
-                isMatching = session.min_age_limit === 18 && sessionsAvailability > 0;
+                isMatching = hasEighteenPlus && sessionsAvailability > 0;
             } else if (underFortyFive) {
-                isMatching = session.min_age_limit === 18;
+                isMatching = isMatching ? isMatching : hasEighteenPlus;
             } else {
                 isMatching = sessionsAvailability > 0;
             }
@@ -110,7 +155,17 @@ const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {}, l
     const [underFortyFive, setUnderFortyFive] = useState(false);
     const [available, setAvailable] = useState(false);
     const [sorting, setSorting] = useState(false);
+    const [visible, setVisible] = useState(false);
+    const [modalData, setModalData] = useState(null);
     const resultRef = useRef(null);
+
+    const updateVisible = e => {
+        document.body.style.overflow = 'auto';
+        manageEvents(e);
+        setVisible(!visible);
+    };
+
+    const updateModalData = data => setModalData(data);
 
     const setFilter = () => {
         !sorting && setSorting(true);
@@ -123,14 +178,12 @@ const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {}, l
 
     useEffect(() => {
         if (resultRef && resultRef.current && loader && !errors) {
-            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
             const options = { block: 'start', inline: 'nearest' };
             resultRef.current.scrollIntoView(isMobile ? options : { ...options, behavior: 'smooth' });
         }
     }, [resultRef, loader, errors]);
 
     const centerData = filteredCenters(underFortyFive, available, sorting, setSorting, centers);
-
     return (
         <Fragment>
             <div className={`centers ${(loader) ? 'loader-section' : ''}`} id='resultCenters' ref={resultRef}>
@@ -150,11 +203,22 @@ const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {}, l
                                     setAvailability={setAvailability}
                                     CONSTANTS={CONSTANTS} />
                             }
-                            <Cards CONSTANTS={CONSTANTS} centerData={centerData} errors={errors} sorting={sorting} />
+                            <Cards
+                                errors={errors}
+                                sorting={sorting}
+                                CONSTANTS={CONSTANTS}
+                                centerData={centerData}
+                                handleClose={updateVisible}
+                                updateModalData={updateModalData} />
                         </Fragment>
-
                 }
             </div>
+            <Modal
+                show={visible}
+                modalData={modalData}
+                handleClose={updateVisible}
+                handleRedirect={handleRedirect}
+            />
         </Fragment>
     );
 };

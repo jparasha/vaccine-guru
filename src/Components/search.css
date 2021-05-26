@@ -43,7 +43,7 @@
     letter-spacing: 0.1rem;
     background-color: #fff;
     border: 1px solid #4e4c4a;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .search-component .search__form .search__input:focus {
@@ -75,7 +75,7 @@
     background: var(--blue);
     letter-spacing: 0.1rem;
     border: 1px solid var(--blue);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .search-component .search__form .toggle__button {
@@ -89,7 +89,7 @@
     font-weight: bolder;
     letter-spacing: 0.1rem;
     background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .search-component .search__form hr {
