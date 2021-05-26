@@ -86,7 +86,7 @@ const Cards = ({ CONSTANTS, centerData, errors, sorting, handleClose, updateModa
             </div>
         );
     }
-    if (!sorting) {
+    if (sorting) {
         return (
             <Loader count={6} />
         );
