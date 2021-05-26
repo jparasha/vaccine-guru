@@ -1,7 +1,6 @@
 import { Fragment, useEffect, useRef, useState } from 'react';
 import './results.css';
 import { manageEvents, isMobile } from '../utils';
-import Tile from './Tile';
 import Loader from './Loader';
 import Modal from './Modal';
 
@@ -10,7 +9,7 @@ const handleRedirect = (event, isAvailable) => {
     manageEvents(event);
     const url = isAvailable ? 'https://www.cowin.gov.in/home' : '';
     if (url) {
-        window.location.href = url;
+        window.open(url, '_blank');
     }
 };
 
@@ -52,17 +51,11 @@ const Card = ({ index, district_name, state_name, name, _min_age_limit, _vaccine
         handleClose(e);
     };
 
-
     const isAvailable = (_available_capacity[45] || _available_capacity[18]);
     return (
         <div className='center' key={index}>
-            {/* <div className='center__title-tiles center__tiles'>
-                        <Tile data={`45+ : ${_available_capacity[45] ? (_available_capacity[45].toFixed()) : 'No'} slots`} bold transparent />
-                        <Tile data={`18+ : ${_available_capacity[18] ? (_available_capacity[18].toFixed()) : 'No'} slots`} bold transparent />
-                        <Tile data={(_available_capacity[45] || _available_capacity[18]) ? 'book' : ''} bold transparent button />
-
-                    </div> */}
             <div className='center__title'>
+                <h6 className={'min-font-size no-margin-bottom'}>{_min_age_limit.includes(18) ? '18+ | ' : '45+ | '}{_vaccine.join(' | ').toUpperCase()}</h6>
                 <h6 className='no-margin center__title-secondary'>{`${district_name}, ${state_name}`}<hr /></h6>
                 <h5 className='no-margin center__title-primary'><strong>{name}</strong></h5>
             </div>
@@ -70,20 +63,13 @@ const Card = ({ index, district_name, state_name, name, _min_age_limit, _vaccine
                 <button className={`center__button transparent`} onClick={updateModal}>
                     MORE DETAILS
                 </button>
-                <button className={`center__button ${(isAvailable) ? '' : 'un-available'}`} disabled={!isAvailable}>
+                <button
+                    onClick={e => (handleRedirect(e, isAvailable))}
+                    className={`center__button ${(isAvailable) ? '' : 'un-available'}`}
+                    disabled={!isAvailable}>
                     {isAvailable ? 'Book Now' : 'No Slots'}
                 </button>
-                {/*  <a href='#' onClick={(e, isAvailable) => handleRedirect(e, isAvailable)} className={`center__button transparent ${(isAvailable) ? 'available' : 'un-available'}`}>
-                    {isAvailable ? 'Book Now' : 'No Slots'}
-                </a>
-                <a href='#' role='button' className={'center__button'} onClick={updateModal}>MORE DETAILS</a> */}
             </div>
-            {/* { visible && <div className='center__tiles'>
-                <Tile data={`${_min_age_limit.includes(18) ? '18' : '45'} + `} />
-                <Tile data={`${_vaccine}`} />
-                <Tile data={`${`${from.substr(0, 2)}AM - ${_to > 12 ? (_to - 12) : _to}PM`}`} />
-            </div>
-            } */}
             <div className='card__age-limit'>
                 <div>{`${fee_type}`}</div>
             </div>
@@ -100,7 +86,7 @@ const Cards = ({ CONSTANTS, centerData, errors, sorting, handleClose, updateModa
             </div>
         );
     }
-    if (sorting) {
+    if (!sorting) {
         return (
             <Loader count={6} />
         );
@@ -109,12 +95,12 @@ const Cards = ({ CONSTANTS, centerData, errors, sorting, handleClose, updateModa
         (center = {}, index = '') => {
             const { district_name = '', name = '', state_name = '', fee_type = '', from = '', to = '', sessions = [] } = center;
             const _available_capacity = { 18: 0, 45: 0 }, _min_age_limit = [], _to = to.substr(0, 2);
-            let _vaccine = '';
+            const _vaccine = [];
             sessions.forEach((session = {}) => {
                 const { available_capacity = '', min_age_limit = '', vaccine = '' } = session;
                 min_age_limit && _min_age_limit.push(min_age_limit);
                 _available_capacity[min_age_limit] = _available_capacity[min_age_limit] += available_capacity;
-                _vaccine = _vaccine || vaccine;
+                ((!_vaccine.includes(vaccine)) && _vaccine.push(vaccine));
             });
             return (
                 <Card
@@ -149,7 +135,7 @@ const filteredCenters = (underFortyFive, available, sorting, setSorting, centers
             if (underFortyFive && available) {
                 isMatching = session.min_age_limit === 18 && sessionsAvailability > 0;
             } else if (underFortyFive) {
-                isMatching = session.min_age_limit === 18;
+                isMatching = isMatching ? isMatching : session.min_age_limit === 18;
             } else {
                 isMatching = sessionsAvailability > 0;
             }
@@ -226,6 +212,7 @@ const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {}, l
                 show={visible}
                 modalData={modalData}
                 handleClose={updateVisible}
+                handleRedirect={handleRedirect}
             />
         </Fragment>
     );

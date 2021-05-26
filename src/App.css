@@ -42,6 +42,14 @@ body {
   margin: 0;
 }
 
+.no-margin-top {
+  margin-top: 0;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
 .display-block {
   display: block;
 }
@@ -72,6 +80,24 @@ button {
   font-family: 'Quicksand', sans-serif;
 }
 
+button.transparent {
+  background-color: transparent;
+  color: var(--black);
+  border: 1px solid var(--blue);
+}
+
+button.transparent.danger {
+  background-color: transparent;
+  color: var(--black);
+  border: 1px solid var(--red);
+}
+
+button.transparent.danger:hover {
+  background-color: var(--red);
+  color: var(--white);
+  border: 1px solid var(--red);
+}
+
 .col {
   display: flex;
   flex-flow: column wrap;
@@ -93,6 +119,10 @@ button {
 
 .content-even {
   justify-content: space-evenly;
+}
+
+.content-center {
+  justify-content: center;
 }
 
 .content-end {
@@ -146,6 +176,10 @@ button {
 
 li {
   list-style: none;
+}
+
+.min-font-size {
+  font-size: 0.6rem;
 }
 
 @media screen and (max-width: 768px) {

@@ -26,6 +26,7 @@
 
 
 .modal__body .body__card {
+    position: relative;
     margin: 5% 2%;
     display: flex;
     min-width: 250px;
@@ -47,4 +48,15 @@ ul:nth-child(1) {
 
 .body__card-body-ul {
     padding: 5%;
+}
+
+.modal__header {
+    position: relative;
+    padding: 0 10%;
+}
+
+.modal__header button {
+    position: absolute;
+    right: 0;
+    top: 0;
 }

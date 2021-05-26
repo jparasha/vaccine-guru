@@ -70,18 +70,18 @@
 }
 
 .center__title-primary {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bolder;
 }
 
-.center__title-secondary hr {
+.center hr {
     border-bottom: 1px solid var(--blue);
     width: 2rem;
     margin-left: 0
 }
 
 .center__title-secondary {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: normal;
 }
 
@@ -169,11 +169,14 @@
     background-color: var(--secondary-blue);
 }
 
-.center__button.un-available {
+.center__button.un-available,
+.center__button.un-available:hover,
+.center__button.un-available:active {
     background-color: var(--red);
     border: 1px solid var(--red);
     cursor: not-allowed;
 }
+
 
 
 @media screen and (max-width: 768px) {

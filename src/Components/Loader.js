@@ -11,7 +11,6 @@ const CardSkeleton = () => {
             <div className='center__tiles'>
                 <span className='tile'></span>
                 <span className='tile'></span>
-                <span className='tile'></span>
             </div>
         </div>
     );
