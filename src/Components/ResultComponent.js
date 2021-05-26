@@ -58,8 +58,8 @@ const Card = ({ index, district_name, state_name, name, _min_age_limit, _vaccine
         <div className='center' key={index}>
             <div className='center__title'>
                 <Tile transparent data={`${_min_age_limit.includes(18) ? '18' : '45'}+${_vaccine.join(' | ').toUpperCase()}`} />
-                <h6 className='no-margin center__title-secondary'>{`${district_name}, ${state_name}`}<hr /></h6>
-                <h5 className='no-margin center__title-primary'><strong>{name}</strong></h5>
+                <h5 className='no-margin center__title-primary'><strong>{name}</strong><hr /></h5>
+                <h6 className='no-margin center__title-secondary'>{`${district_name}, ${state_name}`}</h6>
             </div>
             <div className={'center__buttons'}>
                 <button className={`center__button transparent`} onClick={updateModal}>

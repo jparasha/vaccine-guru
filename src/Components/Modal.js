@@ -20,7 +20,7 @@ const ModalComponent = ({ show, handleClose, modalData, handleRedirect }) => {
             transform: 'translate(-50%, -50%)',
             minWidth: isMobile ? '80vw' : '42vw',
             maxWidth: isMobile ? '85vw' : '60vw',
-            minHeight: isMobile ? '65vh' : '70vh'
+            minHeight: isMobile ? '50vh' : '70vh'
         }
     };
 
@@ -38,7 +38,7 @@ const ModalComponent = ({ show, handleClose, modalData, handleRedirect }) => {
                 <div className={'modal__box'}>
                     <div className={'modal__header col'}>
                         <p>{`${district_name}, ${state_name}`}</p>
-                        <button className={'transparent danger'} onClick={handleClose}>X</button>
+                        <button className={'transparent danger'} onClick={handleClose}>x</button>
                     </div>
                     <h3 className={'no-margin-top text-center'}>{name}</h3>
                     <div className={`modal__body col flex-row-nowrap auto-overflow ${(sessions.length > 1) ? 'content-start' : 'content-center'}`}>
