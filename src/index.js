@@ -19,18 +19,26 @@ const randomNotification = () => {
     body: notifBody,
     icon: notifImg,
   };
-  new Notification(notifTitle, options);
-  setTimeout(randomNotification, 30000);
+  if (window.Notification) {
+    new Notification(notifTitle, options);
+    setTimeout(randomNotification, 30000);
+  } else {
+    alert('no notif');
+  }
 }
 
+if (window.Notification) {
+  Notification.requestPermission().then((result = 'test') => {
+    alert(result);
+    if (result === 'granted') {
+      console.log('granted');
+      randomNotification();
+    }
+  });
+} else {
+  alert('no notif initial');
+}
 
-Notification.requestPermission().then((result) => {
-  console.log(result);
-  if (result === 'granted') {
-    console.log('granted');
-    randomNotification();
-  }
-});
 
 ReactDOM.render(
   <React.StrictMode>
