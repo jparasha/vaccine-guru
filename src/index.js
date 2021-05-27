@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const randomNotification = () => {
+  alert('displaying notif');
   const games = {
     name: 'test',
     author: 'test-auth'
