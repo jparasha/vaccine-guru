@@ -4,6 +4,7 @@ import { manageEvents, isMobile } from '../utils';
 import Loader from './Loader';
 import Tile from './Tile';
 import Modal from './Modal';
+import Notification from './Notification';
 
 
 const handleRedirect = (event, isAvailable) => {
@@ -213,6 +214,7 @@ const ResultComponent = ({ response = {}, errors = null, data: CONSTANTS = {}, l
                         </Fragment>
                 }
             </div>
+            <Notification />
             <Modal
                 show={visible}
                 modalData={modalData}

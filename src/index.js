@@ -4,15 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const randomNotification = () => {
+/* const randomNotification = () => {
   alert('displaying notif');
   const games = {
     name: 'test',
     author: 'test-auth'
 
-  };
+  }; */
 
-  const notifTitle = games.name;
+/*   const notifTitle = games.name;
   const notifBody = `Created by ${games.author}.`;
   const notifImg = `/logo192.png`;
   const options = {
@@ -38,7 +38,7 @@ if (window.Notification) {
 } else {
   alert('no notif initial');
 }
-
+ */
 
 ReactDOM.render(
   <React.StrictMode>
