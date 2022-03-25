@@ -28,7 +28,9 @@ const SearchComponent = ({ data = {}, searchHandler, pinCode = '', state = '', d
 
     return (
         <div className='search-component'>
-            <img className='search__image' src='/vaccine.jpg' alt='vaccine' />
+            <div className='search__image-parent'>
+            <img className='search__image' src='/vaccine___.jpg' alt='vaccine' />
+            </div>
             <form className='search__form'>
                 <h3 className='flex-item'>{searchByPin ? data.INPUT_LABEL : data.DISTRICT_SEARCH_LABEL}</h3>
                 {searchByPin ?
